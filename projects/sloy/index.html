@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2eee5">
+    <meta name="description" content="Дизайн-концепт булочной «Слой»: хлеб на закваске, слойки и выпечка к завтраку.">
+    <title>Слой — выпечка к утру</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К содержанию</a>
+    <div class="demo-strip">ДИЗАЙН-МАКЕТ «СЛОЙ» <span>·</span> АССОРТИМЕНТ И ЦЕНЫ УСЛОВНЫЕ</div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Слой — наверх"><span class="brand-sigil" aria-hidden="true">С.</span><span class="brand-name">СЛОЙ<span>булочная</span></span></a>
+        <nav class="main-nav" aria-label="Основная навигация"><a href="#menu">Меню</a><a href="#note">О булочной</a><a href="credits.html">Фото и источники</a></nav>
+        <button class="bag-trigger" type="button" data-open-cart aria-haspopup="dialog" aria-controls="bag-dialog">Корзина <span data-cart-count aria-live="polite">0</span></button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark">01</span> ХЛЕБ, СЛОЙКИ И ДЕСЕРТЫ</p>
+          <h1 id="hero-title">К кофе — слойку.<br>Домой — <em>хлеб.</em></h1>
+          <p class="hero-lead">Круассаны к утреннему кофе, хлеб на закваске и десерт к чаю. Выбирайте, что взять сегодня.</p>
+          <a class="hero-button" href="#menu">Посмотреть меню <span aria-hidden="true">↘</span></a>
+          <p class="hero-footnote">Выпечка к завтраку, хлеб домой и что-нибудь к чаю.</p>
+        </div>
+        <figure class="hero-image">
+          <img src="assets/pastry/hero-bake.jpg" alt="Кофе и сладкая выпечка на столе, вид сверху" fetchpriority="high" width="1600" height="1200">
+          <figcaption><a href="https://www.pexels.com/photo/top-view-of-coffee-and-sweet-pastry-on-the-table-8526484/" target="_blank" rel="noreferrer">ФОТО · PAVEL DANILYUK / PEXELS ↗</a></figcaption>
+          <div class="photo-number" aria-hidden="true"><span>ВИТРИНА</span><strong>01</strong><span>ХЛЕБ<br>И ВЫПЕЧКА</span></div>
+        </figure>
+        <div class="hero-bottom"><span>ХЛЕБ</span><i></i><span>СЛОЙКИ</span><i></i><span>К ЧАЮ</span><span class="hero-bottom-end">МАКЕТ · 2026</span></div>
+      </section>
+
+      <section class="menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="menu-wrap">
+          <div class="menu-intro">
+            <div><p class="eyebrow"><span class="eyebrow-mark">02</span> К ЗАВТРАКУ И К ЧАЮ</p><h2 id="menu-title">Выпечка <span data-visible-count>05</span></h2></div>
+            <p>От круассана к кофе до хлеба на закваске — небольшая витрина на каждый день.</p>
+          </div>
+          <div class="menu-tools">
+            <div class="filter-tabs" role="group" aria-label="Выбрать вид выпечки">
+              <button type="button" data-filter="all" aria-pressed="true" class="is-active">Всё</button>
+              <button type="button" data-filter="laminated" aria-pressed="false">Слойки</button>
+              <button type="button" data-filter="bread" aria-pressed="false">Хлеб</button>
+              <button type="button" data-filter="sweet" aria-pressed="false">Десерты</button>
+            </div>
+            <p class="filter-status" data-filter-status aria-live="polite">Вся выпечка · 5 позиций</p>
+          </div>
+          <div class="menu-grid" data-product-grid>
+            <article class="menu-card" data-product data-category="laminated" data-id="croissant" data-name="Круассан" data-price="420">
+              <a class="menu-photo" href="https://www.pexels.com/photo/close-up-of-freshly-baked-croissants-in-bakery-display-30403209/" target="_blank" rel="noreferrer" aria-label="Фото круассанов в витрине, автор James Collington, Pexels"><img src="assets/pastry/croissant.jpg" alt="Круассаны в витрине пекарни" loading="lazy" width="1200" height="1200"><span class="photo-author">JAMES COLLINGTON / PEXELS ↗</span></a>
+              <div class="card-index"><span>ПОЗИЦИЯ 01</span><span>СЛОЁНОЕ</span></div>
+              <h3>Круассан</h3><p class="menu-description">Румяная корочка, тонкие слои теста и мягкая середина. Хорош сам по себе и с кофе.</p>
+              <div class="card-buy"><p>420 ₽ <small>цена макета</small></p><button type="button" data-add aria-label="Добавить Круассан в демонстрационную корзину">В корзину <span aria-hidden="true">+</span></button></div>
+            </article>
+            <article class="menu-card" data-product data-category="sweet" data-id="roll" data-name="Улитка с корицей" data-price="390">
+              <a class="menu-photo photo-square" href="https://www.pexels.com/photo/close-up-photo-of-cinnamon-rolls-8846932/" target="_blank" rel="noreferrer" aria-label="Фото булочек с корицей, автор Sveta K., Pexels"><img src="assets/pastry/cinnamon-roll.jpg" alt="Булочки с корицей и глазурью крупным планом" loading="lazy" width="1200" height="1200"><span class="photo-author">SVETA K. / PEXELS ↗</span></a>
+              <div class="card-index"><span>ПОЗИЦИЯ 02</span><span>К ЧАЮ</span></div>
+              <h3>Улитка с корицей</h3><p class="menu-description">Слоёная булочка с корицей и нежной глазурью — к завтраку или после обеда.</p>
+              <div class="card-buy"><p>390 ₽ <small>цена макета</small></p><button type="button" data-add aria-label="Добавить Улитку с корицей в демонстрационную корзину">В корзину <span aria-hidden="true">+</span></button></div>
+            </article>
+            <article class="menu-card" data-product data-category="bread" data-id="sourdough" data-name="Хлеб на закваске" data-price="760">
+              <a class="menu-photo" href="https://www.pexels.com/photo/rustic-sourdough-bread-on-flour-dusted-surface-30785711/" target="_blank" rel="noreferrer" aria-label="Фото хлеба на закваске, автор Beyza Yalçın, Pexels"><img src="assets/pastry/sourdough.jpg" alt="Буханка хлеба на присыпанной мукой поверхности" loading="lazy" width="1200" height="1200"><span class="photo-author">BEYZA YALÇIN / PEXELS ↗</span></a>
+              <div class="card-index"><span>ПОЗИЦИЯ 03</span><span>ХЛЕБНОЕ</span></div>
+              <h3>Хлеб на закваске</h3><p class="menu-description">Плотная хрустящая корка, упругий мякиш и лёгкая кислинка.</p>
+              <div class="card-buy"><p>760 ₽ <small>цена макета</small></p><button type="button" data-add aria-label="Добавить Хлеб на закваске в демонстрационную корзину">В корзину <span aria-hidden="true">+</span></button></div>
+            </article>
+            <article class="menu-card" data-product data-category="bread" data-id="bagel" data-name="Кунжутный бейгл" data-price="350">
+              <a class="menu-photo" href="https://www.pexels.com/photo/freshly-baked-bagels-in-traditional-wood-fired-oven-37290092/" target="_blank" rel="noreferrer" aria-label="Фото бейглов в печи, автор Yasin Onuş, Pexels"><img src="assets/pastry/bagel.jpg" alt="Кунжутные бейглы в дровяной печи" loading="lazy" width="1200" height="1200"><span class="photo-author">YASIN ONUŞ / PEXELS ↗</span></a>
+              <div class="card-index"><span>ПОЗИЦИЯ 04</span><span>ХЛЕБНОЕ</span></div>
+              <h3>Кунжутный бейгл</h3><p class="menu-description">Пшеничный бейгл с кунжутом. Подойдёт для завтрака или сэндвича.</p>
+              <div class="card-buy"><p>350 ₽ <small>цена макета</small></p><button type="button" data-add aria-label="Добавить Кунжутный бейгл в демонстрационную корзину">В корзину <span aria-hidden="true">+</span></button></div>
+            </article>
+            <article class="menu-card" data-product data-category="sweet" data-id="tart" data-name="Лимонный тарт" data-price="590">
+              <a class="menu-photo" href="https://www.pexels.com/photo/tart-with-meringue-on-plates-near-lemons-on-table-6606003/" target="_blank" rel="noreferrer" aria-label="Фото лимонного тарта, автор Geraud pfeiffer, Pexels"><img src="assets/pastry/lemon-tart.jpg" alt="Лимонный тарт с меренгой и лимонами на столе" loading="lazy" width="1200" height="1200"><span class="photo-author">GERAUD PFEIFFER / PEXELS ↗</span></a>
+              <div class="card-index"><span>ПОЗИЦИЯ 05</span><span>К ЧАЮ</span></div>
+              <h3>Лимонный тарт</h3><p class="menu-description">Песочная основа, лимонный крем и меренга — лёгкий десерт к чаю.</p>
+              <div class="card-buy"><p>590 ₽ <small>цена макета</small></p><button type="button" data-add aria-label="Добавить Лимонный тарт в демонстрационную корзину">В корзину <span aria-hidden="true">+</span></button></div>
+            </article>
+          </div>
+          <p class="no-results" data-no-results hidden>В этой категории пока нет выпечки.</p>
+        </div>
+      </section>
+
+      <section class="project-note" id="note" aria-labelledby="note-title">
+        <div class="project-note-inner">
+          <div class="note-index">03<br>—<br>03</div>
+          <div><p class="eyebrow">О БУЛОЧНОЙ</p><h2 id="note-title">За хлебом,<br>заодно — за слойкой.</h2><p>«Слой» — дизайн-концепт булочной с небольшой витриной хлеба и выпечки. Ассортимент и цены придуманы для макета; оформить настоящий заказ здесь нельзя.</p></div>
+          <a href="credits.html" class="note-link">Фото и авторы <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="credits"><div class="footer-inner"><a class="brand" href="#top"><span class="brand-sigil" aria-hidden="true">С.</span><span class="brand-name">СЛОЙ<span>булочная</span></span></a><p>Дизайн-концепт · 2026<br>Заказы не принимаются.</p><a href="credits.html">Фото и лицензии <span aria-hidden="true">↗</span></a><span>ПОРТФОЛИО</span></div></footer>
+
+    <dialog class="bag-dialog" id="bag-dialog" aria-labelledby="bag-title"><div class="bag-panel"><div class="bag-heading"><div><p class="eyebrow">ДЕМОНСТРАЦИОННЫЙ РЕЖИМ</p><h2 id="bag-title">Ваша корзина</h2></div><button type="button" class="bag-close" data-close-cart aria-label="Закрыть корзину">×</button></div><div class="bag-items" data-cart-items></div><p class="bag-empty" data-cart-empty>Вы пока ничего не добавили.</p><div class="bag-total"><span>Сумма в макете</span><strong data-cart-total>0 ₽</strong></div><p class="bag-disclaimer">Корзина работает только для демонстрации: заказ и оплата недоступны.</p></div></dialog>
+    <div class="toast" role="status" aria-live="polite" data-announcement></div>
+  </body>
+</html>

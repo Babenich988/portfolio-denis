@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>MP</title>
+</head>
+<body>
+    <section class="dekstop-1" id="home">
+        <nav class="deks_menu">
+            <ul class="nav_list">
+                <li><img src="images/mp.png" alt="MusicPlayer" class="mp"></li>
+                <li><a href="#home" class="Home">HOME</a></li>
+                <li><a href="#music" class="Music">MUSIC</a></li>
+                <li><a href="#about" class="About">ABOUT</a></li>
+                <li><a href="#store" class="Store">STORE</a></li>
+            </ul>
+        </nav>
+        <div class="hero-copy">
+            <p class="words_1">American company formed in 2002 in Boston, Massachusetts</p>
+            <p class="MusicPlayer">MUSIC PLAYER</p>
+        </div>
+        <img src="images/iphone.png" alt="телефон" class="iphone">
+    </section>
+    <section class="dekstop-2" id="music">
+        <p class="mus">Music</p>
+        <button class="listen" type="button" aria-pressed="false"><span class="listen-indicator" aria-hidden="true">▶</span><span class="listen-label">Listen now</span></button>
+        <p class="music-feedback" id="music-feedback" role="status" aria-live="polite">Выберите Listen now, чтобы запустить демо-плеер.</p>
+        <button class="song" type="button">Find a song...</button>
+        <img src="images/on_2.png" alt="диск" class="disk">
+    </section>
+    <section class="dekstop-3" id="about">
+        <p class="Abouts">About</p>
+        <p class="words_3">MusicPlayer gives you instant access to millions of songs – from old favorites to the latest hits. Just hit play to stream anything you like.</p>
+        <button class="about-toggle" type="button" aria-expanded="false" aria-controls="about-extra">More about MusicPlayer <span aria-hidden="true">＋</span></button>
+        <p class="about-extra" id="about-extra" hidden>Explore new artists, save albums to your collection, and find a soundtrack for every moment.</p>
+    </section>
+    <section class="dekstop-4" id="store">
+        <p class="Stores">Store</p>
+        <p class="need">Нужна предыдущая версия MPlayer?</p>
+        <p class="made">Вы можете скачать одну из предыдущих версий MPlayer, которая совместима с нужной вам версией операционной системы и определёнными устройствами.</p>
+        <a href="#" class="take">Выберите предыдущую версию MPlayer</a>
+        <button class="win" type="button">Download Windows x64</button>
+        <button class="mac" type="button">Download MacOS</button>
+        <p class="download-feedback" id="download-feedback" role="status" aria-live="polite" hidden></p>
+        <div class="keysboard"></div>
+        <div class="laptop_menu">
+            <div class="music_laptop">MUSIC PLAYER</div>
+            <div class="women_foto">
+                <img src="images/women_4.png" alt="Аватарка" class="woman">
+                <p class="artist" id="current-track">Your Music - Artist</p>
+                <div class="poloska"></div>
+                <div class="grom-2"></div>
+                <div class="tochka-2"></div>
+            </div>
+            <div class="poisk">
+                <input type="text" placeholder="Поиск..." class="grey_poisk" id="song-search">
+                <button class="catalog_1" type="button" aria-pressed="true">Для вас</button>
+                <button class="catalog_2" type="button" aria-pressed="false">Песни</button>
+                <button class="catalog_3" type="button" aria-pressed="false">Артисты</button>
+                <button class="catalog_4" type="button" aria-pressed="false">Альбомы</button>
+                <button class="catalog_5" type="button" aria-pressed="false">Store</button>
+                <button class="catalog_6" type="button" aria-pressed="false">Избранное</button>
+                <label class="album-range-wrap" for="album-range"><span>Листать подборку</span><input id="album-range" type="range" min="0" max="9" value="0"><output id="album-range-value">01 / 10</output></label>
+            </div>
+            <button class="top" type="button" aria-pressed="false">Топ-10</button>
+            <button class="scroll" type="button">Найти</button>
+            <div class="music_proektor_1">
+                <img src="images/1_foto.jpg" alt="" class="music_line_1">
+                <img src="images/2_foto.jpg" alt="" class="music_line_1">
+                <img src="images/3_foto.jpg" alt="" class="music_line_1">
+                <img src="images/4_foto.jpg" alt="" class="music_line_1">
+                <img src="images/5_foto.jpg" alt="" class="music_line_1">
+                <img src="images/6_foto.jpg" alt="" class="music_line_2">
+                <img src="images/7_foto.jpg" alt="" class="music_line_2">
+                <img src="images/8_foto.jpg" alt="" class="music_line_2">
+                <img src="images/9_foto.jpg" alt="" class="music_line_2">
+                <img src="images/10_foto.jpg" alt="" class="music_line_2">
+                <a href="" class="f_1">СБПЧ</a>
+                <a href="" class="f_2">Sufjan Stevens</a>
+                <a href="" class="f_3">Hudson Mohawke</a>
+                <a href="" class="f_4">Pinkshinyultrablast</a>
+                <a href="" class="f_5">Floating Points</a>
+                <a href="" class="f_6">Shamir</a>
+                <a href="" class="f_7">Grimes</a>
+                <a href="" class="f_8">Tame Impala</a>
+                <a href="" class="f_9">Jamie xx</a>
+                <a href="" class="f_10">Kendrick Lamar</a>
+                <a href="" class="f_1_1">Здесь и всегда</a>
+                <a href="" class="f_2_1">Carrie & Lowell</a>
+                <a href="" class="f_3_1">Lantern</a>
+                <a href="" class="f_4_1">Everything Else Matters</a>
+                <a href="" class="f_5_1">Elaenia</a>
+                <a href="" class="f_6_1">Ratchet</a>
+                <a href="" class="f_7_1">Art Angels</a>
+                <a href="" class="f_8_1">Currents</a>
+                <a href="" class="f_9_1">In Colour</a>
+                <a href="" class="f_10_1">To Pimp A Butterfly</a>
+            </div>
+            <div class="proektor" aria-label="Демонстрационный аудиоплеер">
+                <img src="images/menu_IN_NOTEBOOK.png" alt="" class="set-1">
+                <img src="images/internet_in_notebook.png" alt="" class="set-2">
+                <img src="images/adjust_4.png" alt="" class="set-3">
+                <div class="polosa">
+                    <div class="grom">
+                        <div class="tochka"></div>
+                    </div>
+                </div>
+                <button class="pause" type="button" aria-label="Переключить состояние демо-плеера" aria-pressed="false">
+                    <div class="pause_1"></div>
+                    <div class="pause_2"></div>
+                </button>
+                <button class="back" type="button" aria-label="Предыдущий трек"><img src="images/back.png" alt=""></button>
+                <button class="up" type="button" aria-label="Следующий трек"><img src="images/back.png" alt="" class="str"></button>
+            </div>
+            <p class="pro">Mackbook Pro</p>
+        </div>
+    </section>
+    <dialog class="album-dialog" id="album-dialog" aria-labelledby="album-dialog-title">
+        <div class="album-dialog-card">
+            <button class="album-close" id="album-close" type="button" aria-label="Закрыть">×</button>
+            <img id="album-dialog-cover" alt="">
+            <div class="album-dialog-copy"><span>АЛЬБОМ ИЗ ПОДБОРКИ</span><h2 id="album-dialog-title"></h2><p id="album-dialog-artist"></p><p class="album-note">В проекте есть обложка и название. Аудиозаписи не приложены.</p><button id="favorite-toggle" class="favorite-toggle" type="button">☆ В избранное</button></div>
+        </div>
+    </dialog>
+    <section class="dekstop-5" id="footer">
+        <ul class="column_3">
+            <li><a href="" class="column_3_content">Учётная запись</a></li>
+            <li><a href="" class="column_3_word_1">Управление вашим MPlayer ID</a></li>
+            <li><a href="" class="column_3_word_2">Учётная запись MPlayer Store</a></li>
+        </ul>
+        <ul class="column_2">
+            <li><a href="" class="column_2_content">Ценности MPlayer</a></li>
+            <li><a href="" class="column_2_word_1">Универсальный доступ</a></li>
+            <li><a href="" class="column_2_word_2">Окружающая среда</a></li>
+            <li><a href="" class="column_2_word_3">Конфиденциальность</a></li>
+        </ul>
+        <ul class="column_1">
+            <li><a href="" class="column_1_content">MPlayer Store</a></li>
+            <li><a href="" class="column_1_word_1">Варианты оплаты</a></li>
+            <li><a href="" class="column_1_word_2">Состояние заказа</a></li>
+            <li><a href="" class="column_1_word_3">Помощь при покупке</a></li>
+        </ul>
+        <p class="MUSIC">MUSIC PLAYER</p>
+        <ul class="row">
+            <li><a href="" class="inc">© MPlayer Inc., 2022 г. Все права защищены.</a></li>
+            <li><a href="" class="isp"> Условия использования</a></li>
+            <li><a href="" class="shop"> Продажа и возврат</a></li>
+            <li><a href="" class="inf">Юридическая информация</a></li>
+        </ul>
+    </section>
+    <script src="music.js" defer></script>
+</body>
+</html>
+
+
+
+

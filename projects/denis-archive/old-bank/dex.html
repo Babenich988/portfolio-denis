@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="ru" style="--tg-viewport-height: 100vh; --tg-viewport-stable-height: 100vh;"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f4f7ff">
+    <meta name="lava-verify" content="fe0197e578a23883">
+    <title>antichniistore</title>
+    <link rel="stylesheet" href="/styles.css?v=20260617-pages-filters2">
+  </head>
+  <body data-telegram-mini-app="true" data-loading="false" data-page="home">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="antichniistore">
+        <img class="brand-logo" src="/assets/antichniistore-logo.jpg" alt="antichniistore">
+        
+      </a>
+
+      <button class="catalog-trigger" id="catalogMenuButton" type="button" aria-expanded="false">
+        Каталог
+      </button>
+
+      <div class="search-hub">
+        <div class="search-tabs" role="tablist" aria-label="Режим поиска">
+          <button id="regularSearchTab" type="button" aria-selected="true">Поиск</button>
+          <button id="aiSearchTab" type="button" aria-selected="false">AI-поиск</button>
+        </div>
+        <label class="header-search" aria-label="Поиск по маркетплейсу">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"></path></svg>
+          <input id="searchInput" type="search" placeholder="Найти товар, подписку или услугу" autocomplete="off">
+        </label>
+      </div>
+
+      <div class="header-actions" aria-label="Быстрые действия">
+        <button class="circle-action" id="supportButton" type="button" title="Поддержка" aria-label="Поддержка">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7A8.38 8.38 0 0 1 4 11.5a8.5 8.5 0 1 1 17 0Z"></path></svg>
+        </button>
+        <button class="circle-action" id="cartButton" type="button" title="Корзина" aria-label="Корзина">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.8 8.4a2 2 0 0 1-2 1.6H9a2 2 0 0 1-2-1.7L5.2 3H3"></path><path d="M9 21h.01M18 21h.01"></path></svg>
+          <span id="cartCount">0</span>
+        </button>
+        <button class="circle-action" id="profileButton" type="button" title="Профиль" aria-label="Профиль">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="mega-menu" id="megaMenu" hidden="">
+      <div>
+        <span>Каталог</span>
+        <strong>Все разделы antichniistore</strong>
+      </div>
+      <div class="mega-grid" id="megaCategoryGrid">
+      <a href="#catalog" data-mega-category="ai-subscriptions">
+        <strong>AI-подписки</strong>
+        <span>4 предложений</span>
+      </a>
+    
+      <a href="#catalog" data-mega-category="music-video">
+        <strong>Музыка и видео</strong>
+        <span>5 предложений</span>
+      </a>
+    
+      <a href="#catalog" data-mega-category="telegram">
+        <strong>Telegram</strong>
+        <span>2 предложений</span>
+      </a>
+    
+      <a href="#catalog" data-mega-category="games">
+        <strong>Игры</strong>
+        <span>1 предложений</span>
+      </a>
+    
+      <a href="#catalog" data-mega-category="digital-goods">
+        <strong>Цифровые товары</strong>
+        <span>1 предложений</span>
+      </a>
+    
+      <a href="#catalog" data-mega-category="clothing-resale">
+        <strong>Одежда / ресейл</strong>
+        <span>2 предложений</span>
+      </a>
+    
+      <a href="#catalog" data-mega-category="sneakers">
+        <strong>Кроссовки</strong>
+        <span>2 предложений</span>
+      </a>
+    
+      <a href="#catalog" data-mega-category="perfume">
+        <strong>Парфюмерия</strong>
+        <span>2 предложений</span>
+      </a>
+    
+      <a href="#catalog" data-mega-category="cosmetics">
+        <strong>Косметика</strong>
+        <span>2 предложений</span>
+      </a>
+    
+      <a href="#catalog" data-mega-category="auto-parts">
+        <strong>Автозапчасти</strong>
+        <span>2 предложений</span>
+      </a>
+    
+      <a href="#catalog" data-mega-category="tires">
+        <strong>Шины</strong>
+        <span>2 предложений</span>
+      </a>
+    
+      <a href="#catalog" data-mega-category="accessories">
+        <strong>Аксессуары</strong>
+        <span>2 предложений</span>
+      </a>
+    </div>
+    </div>
+
+    <main id="home">
+      <section class="hero-section">
+        <div class="hero-copy">
+          
+          <h1>Найти, сравнить, заказать.</h1>
+          <p>Подписки, Telegram, игры, ресейл, парфюм, косметика и автотовары с понятной ценой, источниками и доставкой.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#catalog">Открыть каталог</a>
+            <a class="secondary-button" href="#ai-search">Найти через AI</a>
+            <a class="secondary-button" href="#seller-onboarding">Стать продавцом</a>
+          </div>
+        </div>
+
+        <div class="hero-stack" aria-label="Сводка">
+          <div>
+            <strong id="serviceCount">27</strong>
+            <span>предложений</span>
+          </div>
+          <div>
+            <strong id="categoryCount">12</strong>
+            <span>категорий</span>
+          </div>
+          <div>
+            <strong id="minPrice">189&nbsp;₽</strong>
+            <span>цена от</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="top-filter-section" id="catalogFilters" aria-labelledby="catalogFiltersTitle">
+        <div class="filter-heading">
+          <div>
+            <span>Фильтры</span>
+            <h2 id="catalogFiltersTitle">Подобрать товары</h2>
+          </div>
+          <p>Выберите параметры и нажмите «Применить». Карточки рендерятся только в основном каталоге.</p>
+        </div>
+        <form class="filter-panel top-filter-panel" id="catalogFilterForm">
+          <label>
+            Категория
+            <select id="categoryFilter"><option value="all">Все</option><option value="ai-subscriptions">AI-подписки</option><option value="music-video">Музыка и видео</option><option value="telegram">Telegram</option><option value="games">Игры</option><option value="digital-goods">Цифровые товары</option><option value="clothing-resale">Одежда / ресейл</option><option value="sneakers">Кроссовки</option><option value="perfume">Парфюмерия</option><option value="cosmetics">Косметика</option><option value="auto-parts">Автозапчасти</option><option value="tires">Шины</option><option value="accessories">Аксессуары</option></select>
+          </label>
+          <label>
+            Тип
+            <select id="typeFilter">
+              <option value="all">Все типы</option>
+              <option value="товар">Товар</option>
+              <option value="услуга">Услуга</option>
+              <option value="цифровой товар">Цифровой товар</option>
+            </select>
+          </label>
+          <div class="price-row">
+            <label>
+              Цена от
+              <input id="minPriceFilter" type="number" min="0" inputmode="numeric" placeholder="0">
+            </label>
+            <label>
+              До
+              <input id="maxPriceFilter" type="number" min="0" inputmode="numeric" placeholder="50000">
+            </label>
+          </div>
+          <label>
+            Рейтинг
+            <select id="ratingFilter">
+              <option value="0">Любой</option>
+              <option value="4.5">от 4.5</option>
+              <option value="4.7">от 4.7</option>
+              <option value="4.9">от 4.9</option>
+            </select>
+          </label>
+          <label>
+            Продавец / источник
+            <input id="sellerFilter" type="search" placeholder="official, Золотое Яблоко, Auto">
+          </label>
+          <label>
+            Получение
+            <select id="receiveFilter"><option value="all">Любой способ</option><option value="Внутри Telegram">Внутри Telegram</option><option value="Доставка / встреча">Доставка / встреча</option><option value="Доставка / выкуп">Доставка / выкуп</option><option value="Доставка / самовывоз">Доставка / самовывоз</option><option value="Международная доставка">Международная доставка</option><option value="Менеджер">Менеджер</option></select>
+          </label>
+          <label>
+            Сортировка
+            <select id="sortSelect">
+              <option value="catalog">Исходный порядок</option>
+              <option value="popular">Популярное</option>
+              <option value="cheap">Дешевле</option>
+              <option value="expensive">Дороже</option>
+              <option value="new">Новинки</option>
+              <option value="rating">Рейтинг</option>
+            </select>
+          </label>
+          <label class="toggle-line">
+            <input id="plugOnlyFilter" type="checkbox">
+            <span>Только official</span>
+          </label>
+          <label class="toggle-line">
+            <input id="stockFilter" type="checkbox">
+            <span>В наличии</span>
+          </label>
+          <div class="filter-actions">
+            <button class="primary-button full" id="applyFilters" type="submit">Применить</button>
+            <button class="secondary-button full" id="resetFilters" type="button">Сбросить</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="category-section" aria-labelledby="categoriesTitle">
+        <div class="section-heading">
+          <span>Категории</span>
+          <h2 id="categoriesTitle">Выберите раздел</h2>
+        </div>
+        <div class="category-grid" id="categoryGrid"><button class="category-tile" type="button" data-active="false">
+      <span>AI</span>
+      <strong>AI-подписки</strong>
+      <small>4 предложений</small>
+    </button><button class="category-tile" type="button" data-active="false">
+      <span>MV</span>
+      <strong>Музыка и видео</strong>
+      <small>5 предложений</small>
+    </button><button class="category-tile" type="button" data-active="false">
+      <span>ST</span>
+      <strong>Telegram</strong>
+      <small>2 предложений</small>
+    </button><button class="category-tile" type="button" data-active="false">
+      <span>GM</span>
+      <strong>Игры</strong>
+      <small>1 предложений</small>
+    </button><button class="category-tile" type="button" data-active="false">
+      <span>CD</span>
+      <strong>Цифровые товары</strong>
+      <small>1 предложений</small>
+    </button><button class="category-tile" type="button" data-active="false">
+      <span>RS</span>
+      <strong>Одежда / ресейл</strong>
+      <small>2 предложений</small>
+    </button><button class="category-tile" type="button" data-active="false">
+      <span>SN</span>
+      <strong>Кроссовки</strong>
+      <small>2 предложений</small>
+    </button><button class="category-tile" type="button" data-active="false">
+      <span>PF</span>
+      <strong>Парфюмерия</strong>
+      <small>2 предложений</small>
+    </button><button class="category-tile" type="button" data-active="false">
+      <span>CS</span>
+      <strong>Косметика</strong>
+      <small>2 предложений</small>
+    </button><button class="category-tile" type="button" data-active="false">
+      <span>AP</span>
+      <strong>Автозапчасти</strong>
+      <small>2 предложений</small>
+    </button><button class="category-tile" type="button" data-active="false">
+      <span>TR</span>
+      <strong>Шины</strong>
+      <small>2 предложений</small>
+    </button><button class="category-tile" type="button" data-active="false">
+      <span>AC</span>
+      <strong>Аксессуары</strong>
+      <small>2 предложений</small>
+    </button></div>
+      </section>
+
+      <section class="ai-search-section" id="ai-search" aria-labelledby="aiSearchTitle">
+        <div class="section-heading">
+          <span>AI-поиск</span>
+          <h2 id="aiSearchTitle">Найти товар по фото, ссылке или описанию</h2>
+        </div>
+        <div class="ai-layout">
+          <form class="ai-form" id="aiSearchForm">
+            <label>
+              Что ищем
+              <input id="aiProductName" name="name" type="text" placeholder="Nike Air Force 1, парфюм, деталь, одежда" required="">
+            </label>
+            <label>
+              Ссылка на источник
+              <input id="aiSourceUrl" name="source" type="url" placeholder="https://poizon.com/... или ссылка на российский магазин">
+            </label>
+            <div class="form-row">
+              <label>
+                Регион поиска
+                <select id="aiRegion" name="region">
+                  <option value="auto">Автоматически</option>
+                  <option value="china">Китай</option>
+                  <option value="korea">Южная Корея</option>
+                  <option value="japan">Япония</option>
+                  <option value="europe">Европа</option>
+                  <option value="usa">США</option>
+                </select>
+              </label>
+              <label>
+                Вес, кг
+                <input id="aiWeight" name="weight" type="number" min="0.1" step="0.1" value="1">
+              </label>
+            </div>
+            <label>
+              Фото товара
+              <input id="aiPhoto" name="photo" type="file" accept="image/*">
+            </label>
+            <label>
+              Детали
+              <textarea id="aiNotes" name="notes" rows="4" placeholder="Размер, цвет, бюджет, бренд, город доставки"></textarea>
+            </label>
+            <button class="primary-button full" type="submit">Запустить AI-поиск</button>
+          </form>
+
+          <div class="ai-results">
+            <div class="ai-loading" id="aiLoading" hidden="">
+              <strong>AI ищет товар</strong>
+              <span id="aiLoadingStep">Проверяем источники...</span>
+              <div class="progress-line"><i></i></div>
+            </div>
+            <div class="ai-result-grid" id="aiResultGrid">
+              <article class="empty-card">
+                <strong>Здесь появятся 3 варианта</strong>
+                <span>Дешевый, оптимальный и премиум с учетом доставки и наценки.</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-views-section" aria-labelledby="quickViewsTitle">
+        <div class="section-heading">
+          <span>Представления</span>
+          <h2 id="quickViewsTitle">Быстрые разделы одного каталога</h2>
+        </div>
+        <div class="quick-view-grid">
+          <a href="/popular" data-catalog-view="popular">Популярное</a>
+          <a href="/official" data-catalog-view="official">Official</a>
+          <a href="/digital" data-catalog-view="digital">Digital</a>
+          <a href="/ai" data-catalog-view="ai">AI-подписки</a>
+          <a href="/music" data-catalog-view="music">Музыка и видео</a>
+          <a href="/games" data-catalog-view="games">Игры</a>
+        </div>
+      </section>
+
+      <section class="catalog-layout" id="catalog" aria-labelledby="catalogTitle">
+        <section class="catalog-section" aria-labelledby="catalogTitle">
+          <div class="catalog-toolbar">
+            <div>
+              <span>Каталог</span>
+              <h2 id="catalogTitle">Все предложения</h2>
+              <p id="resultCount">27 карточек</p>
+            </div>
+          </div>
+
+          <div class="catalog-grid" id="productGrid"><article class="product-card" data-product-id="telegram-stars">
+    
+    <div class="product-visual visual-tile tone-telegram">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><img src="/assets/telegram-stars.svg" alt="" loading="lazy"></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">TS</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>Telegram Stars</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">Telegram</span>
+      <span class="badge">цифровой товар</span>
+    </div>
+    <h3>Telegram Stars</h3>
+    <p class="product-description">Пополнение Stars</p>
+    <div class="product-meta">
+      <span>Пополнение Stars</span>
+      <span>★ 4.9 · 421 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>Telegram · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>15-180 минут</span>
+    </div>
+    <div class="price-line">
+      <strong>189&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="telegram-stars">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="telegram-stars">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="telegram-premium">
+    
+    <div class="product-visual visual-tile tone-telegram">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><img src="/assets/telegram-premium.svg" alt="" loading="lazy"></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">TP</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>Telegram Premium</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">Telegram</span>
+      <span class="badge">цифровой товар</span>
+    </div>
+    <h3>Telegram Premium</h3>
+    <p class="product-description">3 / 6 / 12 месяцев</p>
+    <div class="product-meta">
+      <span>3 / 6 / 12 месяцев</span>
+      <span>★ 4.8 · 276 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>Telegram · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>15-180 минут</span>
+    </div>
+    <div class="price-line">
+      <strong>349&nbsp;₽</strong>
+      <span>2 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="telegram-premium">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="telegram-premium">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="chatgpt">
+    
+    <div class="product-visual visual-tile tone-ai">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><img src="/assets/chatgpt.svg" alt="" loading="lazy"></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">C</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>ChatGPT</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">AI-подписки</span>
+      <span class="badge">цифровой товар</span>
+    </div>
+    <h3>ChatGPT</h3>
+    <p class="product-description">Plus / Team через менеджера</p>
+    <div class="product-meta">
+      <span>Plus / Team через менеджера</span>
+      <span>★ 4.9 · 306 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>antichniistore official · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>до 3 часов</span>
+    </div>
+    <div class="price-line">
+      <strong>2&nbsp;990&nbsp;₽</strong>
+      <span>2 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="chatgpt">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="chatgpt">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="spotify">
+    
+    <div class="product-visual visual-tile tone-audio">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><img src="/assets/spotify.svg" alt="" loading="lazy"></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">SP</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>Spotify Premium</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">Музыка и видео</span>
+      <span class="badge">услуга</span>
+    </div>
+    <h3>Spotify Premium</h3>
+    <p class="product-description">Individual, Duo и Family</p>
+    <div class="product-meta">
+      <span>Individual, Duo и Family</span>
+      <span>★ 4.9 · 184 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>antichniistore official · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>до 3 часов</span>
+    </div>
+    <div class="price-line">
+      <strong>399&nbsp;₽</strong>
+      <span>2 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="spotify">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="spotify">Заказать</button>
+    </div>
+  </article><article class="product-card" data-product-id="apple-gift-card">
+    
+    <div class="product-visual visual-tile tone-gift">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><img src="/assets/apple-gift.svg" alt="" loading="lazy"></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">AG</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>Apple Gift Card</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">Цифровые товары</span>
+      <span class="badge">цифровой товар</span>
+    </div>
+    <h3>Apple Gift Card</h3>
+    <p class="product-description">Пополнение Apple ID</p>
+    <div class="product-meta">
+      <span>Пополнение Apple ID</span>
+      <span>★ 4.9 · 212 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>antichniistore official · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>до 3 часов</span>
+    </div>
+    <div class="price-line">
+      <strong>1&nbsp;290&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="apple-gift-card">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="apple-gift-card">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="apple-music">
+    
+    <div class="product-visual visual-tile tone-apple">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><img src="/assets/apple-music.svg" alt="" loading="lazy"></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">AM</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>Apple Music</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">Музыка и видео</span>
+      <span class="badge">услуга</span>
+    </div>
+    <h3>Apple Music</h3>
+    <p class="product-description">Individual и Family</p>
+    <div class="product-meta">
+      <span>Individual и Family</span>
+      <span>★ 4.8 · 131 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>antichniistore official · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>до 3 часов</span>
+    </div>
+    <div class="price-line">
+      <strong>449&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="apple-music">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="apple-music">Заказать</button>
+    </div>
+  </article><article class="product-card" data-product-id="netflix">
+    
+    <div class="product-visual visual-tile tone-cinema">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><img src="/assets/netflix.svg" alt="" loading="lazy"></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">N</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>Netflix</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">Музыка и видео</span>
+      <span class="badge">услуга</span>
+    </div>
+    <h3>Netflix</h3>
+    <p class="product-description">Standard / Premium</p>
+    <div class="product-meta">
+      <span>Standard / Premium</span>
+      <span>★ 4.8 · 88 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>antichniistore official · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>до 3 часов</span>
+    </div>
+    <div class="price-line">
+      <strong>990&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="netflix">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="netflix">Заказать</button>
+    </div>
+  </article><article class="product-card" data-product-id="supercell">
+    
+    <div class="product-visual visual-tile tone-game">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><img src="/assets/supercell.svg" alt="" loading="lazy"></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">S</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>Supercell</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">Игры</span>
+      <span class="badge">цифровой товар</span>
+    </div>
+    <h3>Supercell</h3>
+    <p class="product-description">Игровые товары и пополнения</p>
+    <div class="product-meta">
+      <span>Игровые товары и пополнения</span>
+      <span>★ 4.8 · 137 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>antichniistore official · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>до 3 часов</span>
+    </div>
+    <div class="price-line">
+      <strong>690&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="supercell">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="supercell">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="youtube-premium">
+    
+    <div class="product-visual visual-tile tone-audio">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">YP</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">YP</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>YouTube Premium</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">Музыка и видео</span>
+      <span class="badge">услуга</span>
+    </div>
+    <h3>YouTube Premium</h3>
+    <p class="product-description">Individual / Family</p>
+    <div class="product-meta">
+      <span>Individual / Family</span>
+      <span>★ 4.8 · 93 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>antichniistore official · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>до 3 часов</span>
+    </div>
+    <div class="price-line">
+      <strong>549&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="youtube-premium">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="youtube-premium">Заказать</button>
+    </div>
+  </article><article class="product-card" data-product-id="claude-pro">
+    
+    <div class="product-visual visual-tile tone-ai">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">CP</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">CP</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>Claude Pro</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">AI-подписки</span>
+      <span class="badge">цифровой товар</span>
+    </div>
+    <h3>Claude Pro</h3>
+    <p class="product-description">Pro доступ через заявку</p>
+    <div class="product-meta">
+      <span>Pro доступ через заявку</span>
+      <span>★ 4.9 · 52 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>antichniistore official · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>до 3 часов</span>
+    </div>
+    <div class="price-line">
+      <strong>3&nbsp;190&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="claude-pro">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="claude-pro">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="soundcloud-go">
+    
+    <div class="product-visual visual-tile tone-audio">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><img src="/assets/soundcloud.svg" alt="" loading="lazy"></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">SG</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>SoundCloud Go+</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">Музыка и видео</span>
+      <span class="badge">услуга</span>
+    </div>
+    <h3>SoundCloud Go+</h3>
+    <p class="product-description">Go+ подписка</p>
+    <div class="product-meta">
+      <span>Go+ подписка</span>
+      <span>★ 4.7 · 64 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>antichniistore official · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>до 3 часов</span>
+    </div>
+    <div class="price-line">
+      <strong>349&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="soundcloud-go">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="soundcloud-go">Заказать</button>
+    </div>
+  </article><article class="product-card" data-product-id="midjourney-basic">
+    
+    <div class="product-visual visual-tile tone-ai">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">MB</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">MB</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>Midjourney Basic</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">AI-подписки</span>
+      <span class="badge">цифровой товар</span>
+    </div>
+    <h3>Midjourney Basic</h3>
+    <p class="product-description">Basic план</p>
+    <div class="product-meta">
+      <span>Basic план</span>
+      <span>★ 4.8 · 67 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>antichniistore official · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>до 3 часов</span>
+    </div>
+    <div class="price-line">
+      <strong>1&nbsp;990&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="midjourney-basic">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="midjourney-basic">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="air-force">
+    
+    <div class="product-visual visual-tile tone-fashion">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">NA</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">NA</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Nike Air Force 1</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Кроссовки</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Nike Air Force 1</h3>
+    <p class="product-description">Кроссовки</p>
+    <div class="product-meta">
+      <span>Кроссовки</span>
+      <span>★ 4.8 · 76 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Poizon buyer</span>
+      <span>Poizon · Китай</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>14-21 день</span>
+    </div>
+    <div class="price-line">
+      <strong>12&nbsp;220&nbsp;₽</strong>
+      <span>2 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="air-force">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="air-force">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="perplexity-pro">
+    
+    <div class="product-visual visual-tile tone-ai">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">PP</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">PP</b>
+      <div class="visual-copy">
+        <span>verified</span>
+        <strong>Perplexity Pro</strong>
+      </div>
+      <small>official</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      <span class="badge plug">official</span>
+      <span class="badge">AI-подписки</span>
+      <span class="badge">цифровой товар</span>
+    </div>
+    <h3>Perplexity Pro</h3>
+    <p class="product-description">Pro план</p>
+    <div class="product-meta">
+      <span>Pro план</span>
+      <span>★ 4.8 · 41 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>antichniistore official</span>
+      <span>antichniistore official · Digital</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>до 3 часов</span>
+    </div>
+    <div class="price-line">
+      <strong>2&nbsp;890&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="perplexity-pro">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="perplexity-pro">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="michelin-r17">
+    
+    <div class="product-visual visual-tile tone-auto">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">MR</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">MR</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Michelin R17</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Шины</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Michelin R17</h3>
+    <p class="product-description">Шины</p>
+    <div class="product-meta">
+      <span>Шины</span>
+      <span>★ 4.8 · 66 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Tire Stock</span>
+      <span>Tire Stock · Россия</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>1-5 дней</span>
+    </div>
+    <div class="price-line">
+      <strong>16&nbsp;080&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="michelin-r17">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="michelin-r17">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="new-balance-1906">
+    
+    <div class="product-visual visual-tile tone-fashion">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">NB</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">NB</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>New Balance 1906R</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Кроссовки</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>New Balance 1906R</h3>
+    <p class="product-description">Кроссовки</p>
+    <div class="product-meta">
+      <span>Кроссовки</span>
+      <span>★ 4.7 · 55 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Poizon buyer</span>
+      <span>Poizon · Китай</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>14-21 день</span>
+    </div>
+    <div class="price-line">
+      <strong>14&nbsp;550&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="new-balance-1906">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="new-balance-1906">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="brake-pads">
+    
+    <div class="product-visual visual-tile tone-auto">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">ТК</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">ТК</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Тормозные колодки</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Автозапчасти</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Тормозные колодки</h3>
+    <p class="product-description">Автозапчасти</p>
+    <div class="product-meta">
+      <span>Автозапчасти</span>
+      <span>★ 4.7 · 58 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Auto Local</span>
+      <span>Auto Local · Россия</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>1-4 дня</span>
+    </div>
+    <div class="price-line">
+      <strong>5&nbsp;910&nbsp;₽</strong>
+      <span>2 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="brake-pads">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="brake-pads">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="pirelli-r18">
+    
+    <div class="product-visual visual-tile tone-auto">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">PR</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">PR</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Pirelli R18</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Шины</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Pirelli R18</h3>
+    <p class="product-description">Шины</p>
+    <div class="product-meta">
+      <span>Шины</span>
+      <span>★ 4.7 · 51 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Tire Stock</span>
+      <span>Tire Stock · Россия</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>1-5 дней</span>
+    </div>
+    <div class="price-line">
+      <strong>17&nbsp;575&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="pirelli-r18">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="pirelli-r18">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="dior-sauvage">
+    
+    <div class="product-visual visual-tile tone-perfume">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">DS</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">DS</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Dior Sauvage</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Парфюмерия</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Dior Sauvage</h3>
+    <p class="product-description">Парфюмерия</p>
+    <div class="product-meta">
+      <span>Парфюмерия</span>
+      <span>★ 4.9 · 63 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Beauty buyer</span>
+      <span>Золотое Яблоко · Россия</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>1-5 дней</span>
+    </div>
+    <div class="price-line">
+      <strong>10&nbsp;395&nbsp;₽</strong>
+      <span>3 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="dior-sauvage">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="dior-sauvage">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="serum-vitamin-c">
+    
+    <div class="product-visual visual-tile tone-perfume">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">VC</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">VC</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Vitamin C Serum</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Косметика</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Vitamin C Serum</h3>
+    <p class="product-description">Косметика</p>
+    <div class="product-meta">
+      <span>Косметика</span>
+      <span>★ 4.7 · 44 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Beauty buyer</span>
+      <span>Золотое Яблоко · Россия</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>1-5 дней</span>
+    </div>
+    <div class="price-line">
+      <strong>2&nbsp;705&nbsp;₽</strong>
+      <span>2 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="serum-vitamin-c">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="serum-vitamin-c">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="car-battery">
+    
+    <div class="product-visual visual-tile tone-auto">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">А6</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">А6</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Аккумулятор 60Ah</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Автозапчасти</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Аккумулятор 60Ah</h3>
+    <p class="product-description">Автозапчасти</p>
+    <div class="product-meta">
+      <span>Автозапчасти</span>
+      <span>★ 4.7 · 47 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Auto Local</span>
+      <span>Auto Local · Россия</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>1-4 дня</span>
+    </div>
+    <div class="price-line">
+      <strong>9&nbsp;330&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="car-battery">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="car-battery">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="archive-jacket">
+    
+    <div class="product-visual visual-tile tone-fashion">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">AJ</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">AJ</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Archive Jacket</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Одежда / ресейл</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Archive Jacket</h3>
+    <p class="product-description">Одежда / ресейл</p>
+    <div class="product-meta">
+      <span>Одежда / ресейл</span>
+      <span>★ 4.7 · 42 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Archive Room</span>
+      <span>Poizon · Китай</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>14-21 день</span>
+    </div>
+    <div class="price-line">
+      <strong>8&nbsp;915&nbsp;₽</strong>
+      <span>2 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="archive-jacket">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="archive-jacket">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="silver-ring">
+    
+    <div class="product-visual visual-tile tone-accessory">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">SR</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">SR</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Silver Ring</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Аксессуары</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Silver Ring</h3>
+    <p class="product-description">Аксессуары</p>
+    <div class="product-meta">
+      <span>Аксессуары</span>
+      <span>★ 4.8 · 34 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Accessory Studio</span>
+      <span>Accessory Studio · Россия</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>1-5 дней</span>
+    </div>
+    <div class="price-line">
+      <strong>4&nbsp;430&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="silver-ring">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="silver-ring">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="tom-ford-oud">
+    
+    <div class="product-visual visual-tile tone-perfume">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">TF</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">TF</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Tom Ford Oud Wood</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Парфюмерия</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Tom Ford Oud Wood</h3>
+    <p class="product-description">Парфюмерия</p>
+    <div class="product-meta">
+      <span>Парфюмерия</span>
+      <span>★ 4.8 · 39 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Beauty buyer</span>
+      <span>Золотое Яблоко · Россия</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>1-5 дней</span>
+    </div>
+    <div class="price-line">
+      <strong>20&nbsp;670&nbsp;₽</strong>
+      <span>2 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="tom-ford-oud">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="tom-ford-oud">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="minimal-hoodie">
+    
+    <div class="product-visual visual-tile tone-fashion">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">MH</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">MH</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Minimal Hoodie</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Одежда / ресейл</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Minimal Hoodie</h3>
+    <p class="product-description">Худи / ресейл</p>
+    <div class="product-meta">
+      <span>Худи / ресейл</span>
+      <span>★ 4.6 · 38 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Archive Room</span>
+      <span>Archive Room · Россия</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>1-5 дней</span>
+    </div>
+    <div class="price-line">
+      <strong>6&nbsp;600&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="minimal-hoodie">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="minimal-hoodie">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="leather-bag">
+    
+    <div class="product-visual visual-tile tone-accessory">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">LB</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">LB</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Leather Bag</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Аксессуары</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Leather Bag</h3>
+    <p class="product-description">Аксессуары</p>
+    <div class="product-meta">
+      <span>Аксессуары</span>
+      <span>★ 4.7 · 28 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Accessory Studio</span>
+      <span>Accessory Studio · Россия</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>1-5 дней</span>
+    </div>
+    <div class="price-line">
+      <strong>11&nbsp;860&nbsp;₽</strong>
+      <span>1 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="leather-bag">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="leather-bag">В корзину</button>
+    </div>
+  </article><article class="product-card" data-product-id="cushion-foundation">
+    
+    <div class="product-visual visual-tile tone-perfume">
+      <i class="visual-rim" aria-hidden="true"></i>
+      <i class="visual-sheen" aria-hidden="true"></i>
+      <div class="visual-mark"><span class="visual-initials">CF</span></div>
+      
+      <b class="visual-bg-word" aria-hidden="true">CF</b>
+      <div class="visual-copy">
+        <span>market item</span>
+        <strong>Cushion Foundation</strong>
+      </div>
+      <small>товар</small>
+    
+    </div>
+  
+    <div class="card-badges">
+      
+      <span class="badge">Косметика</span>
+      <span class="badge">товар</span>
+    </div>
+    <h3>Cushion Foundation</h3>
+    <p class="product-description">Косметика</p>
+    <div class="product-meta">
+      <span>Косметика</span>
+      <span>★ 4.6 · 29 отзывов</span>
+    </div>
+    <div class="seller-row">
+      <span>Beauty buyer</span>
+      <span>Золотое Яблоко · Россия</span>
+    </div>
+    <div class="stock-row">
+      <span>В наличии</span>
+      <span>1-5 дней</span>
+    </div>
+    <div class="price-line">
+      <strong>3&nbsp;510&nbsp;₽</strong>
+      <span>2 источника</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-action" type="button" data-detail="cushion-foundation">Подробнее</button>
+      <button class="card-action primary" type="button" data-primary="cushion-foundation">В корзину</button>
+    </div>
+  </article></div>
+        </section>
+      </section>
+
+      <section class="detail-view" id="detailView" hidden="" aria-live="polite"></section>
+
+      <section class="support-section" id="seller-onboarding" aria-labelledby="sellerTitle">
+        <div class="section-heading">
+          <span>Seller onboarding</span>
+          <h2 id="sellerTitle">Стать продавцом</h2>
+        </div>
+        <div class="seller-layout">
+          <form class="seller-form" id="sellerForm">
+            <label>
+              Контакт
+              <input id="sellerContact" name="contact" type="text" placeholder="@telegram или email" required="">
+            </label>
+            <label>
+              Имя магазина
+              <input id="sellerStore" name="store" type="text" placeholder="Название магазина или ник" required="">
+            </label>
+            <label>
+              Категория
+              <select id="sellerCategory" name="category"><option value="ai-subscriptions">AI-подписки</option><option value="music-video">Музыка и видео</option><option value="telegram">Telegram</option><option value="games">Игры</option><option value="digital-goods">Цифровые товары</option><option value="clothing-resale">Одежда / ресейл</option><option value="sneakers">Кроссовки</option><option value="perfume">Парфюмерия</option><option value="cosmetics">Косметика</option><option value="auto-parts">Автозапчасти</option><option value="tires">Шины</option><option value="accessories">Аксессуары</option></select>
+            </label>
+            <label>
+              Что хотите продавать
+              <textarea id="sellerGoods" name="goods" rows="3" placeholder="Опишите товары, услуги, подписки или источники" required=""></textarea>
+            </label>
+            <label>
+              Ссылки / примеры
+              <input id="sellerLinks" name="links" type="text" placeholder="сайт, Telegram, фото, каталог">
+            </label>
+            <label>
+              Город / страна
+              <input id="sellerLocation" name="location" type="text" placeholder="Москва, РФ">
+            </label>
+            <label>
+              Комментарий
+              <textarea id="sellerComment" name="comment" rows="3" placeholder="Условия, сроки, документы, формат работы"></textarea>
+            </label>
+            <button class="primary-button full" type="submit">Отправить заявку продавца</button>
+          </form>
+          <div class="seller-result" id="sellerResult">
+            <strong>Заявка сохранится локально</strong>
+            <span>Если backend для продавцов не настроен, мы сохраняем черновик в localStorage и показываем номер заявки.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="support-section" id="support" aria-labelledby="supportTitle">
+        <div class="section-heading">
+          <span>Поддержка</span>
+          <h2 id="supportTitle">Поддержка и переход к менеджеру</h2>
+        </div>
+        <div class="support-layout">
+          <div class="support-chat">
+            <div class="chat-feed" id="supportMessages">
+    <div class="chat-message" data-role="assistant">
+      <small>Поддержка</small>
+      <span>Здравствуйте. Это поддержка antichniistore. Помогу найти товар, объяснить оплату, доставку или подключить менеджера.</span>
+    </div>
+  </div>
+            <form class="chat-form" id="supportForm">
+              <input id="supportInput" type="text" placeholder="Спросите про заказ, оплату, доставку или возврат">
+              <button class="primary-button" type="submit">Отправить</button>
+            </form>
+          </div>
+          <div class="support-faq">
+            <article><strong>Как купить</strong><span>Выберите карточку, источник и способ оплаты. Для услуг и сложных товаров заявка уходит менеджеру.</span></article>
+            <article><strong>Оплата</strong><span>Карта РФ / СБП, Crypto, Tribute, Telegram Stars и менеджер показываются как способы заявки, без имитации успешного платежа.</span></article>
+            <article><strong>Доставка</strong><span>Для физических товаров показываем источник, страну, срок, доставку, наценку и итог.</span></article>
+            <article><strong>Возврат / проблема</strong><span>Опишите проблему в поддержке, мы сформируем обращение менеджеру.</span></article>
+            <a class="primary-button full manager-link" id="managerLink" href="https://t.me/your_support" target="_blank" rel="noreferrer">Перейти к менеджеру</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-section" id="profile" aria-labelledby="profileTitle">
+        <div class="section-heading">
+          <span>Профиль</span>
+          <h2 id="profileTitle">Личный кабинет покупателя</h2>
+        </div>
+        <div class="profile-layout">
+          <aside class="profile-menu" id="profileMenu">
+            <button type="button" data-profile-tab="home" aria-selected="false">Главная</button>
+            <button type="button" data-profile-tab="orders" aria-selected="true">Заказы</button>
+            <button type="button" data-profile-tab="favorites" aria-selected="false">Избранное</button>
+            <button type="button" data-profile-tab="ai" aria-selected="false">AI-поиск</button>
+            <button type="button" data-profile-tab="notifications" aria-selected="false">Уведомления</button>
+            <button type="button" data-profile-tab="addresses" aria-selected="false">Адреса</button>
+            <button type="button" data-profile-tab="settings" aria-selected="false">Настройки</button>
+            <button type="button" data-profile-tab="seller" aria-selected="false">Продавец</button>
+          </aside>
+          <div class="profile-content" id="profileContent">
+      <div class="profile-card">
+        <h3>Заказы</h3>
+        <div class="status-row">
+          
+        </div>
+      </div>
+      <div class="profile-card">
+        <h3>Все статусы</h3>
+        <p>найден · ожидает оплаты · оплачен · выкуплен · доставляется · прибыл на склад · отправлен клиенту · завершен · возврат</p>
+      </div>
+    </div>
+        </div>
+      </section>
+
+      <section class="agents-section" id="agents" aria-labelledby="agentsTitle">
+        <div class="section-heading">
+          <span>Процесс</span>
+          <h2 id="agentsTitle">Как работает подбор</h2>
+        </div>
+        <div class="agent-grid" id="agentGrid">
+    <article class="agent-card">
+      <div class="agent-meta"><span>Проверяем источники</span><strong>прозрачно</strong></div>
+      <h3>Проверяем источники</h3>
+      <p>Показываем доступные источники из каталога и заявки: официальный продавец, маркетплейс, локальный магазин или менеджер.</p>
+    </article>
+  
+    <article class="agent-card">
+      <div class="agent-meta"><span>Считаем доставку</span><strong>предварительно</strong></div>
+      <h3>Считаем доставку</h3>
+      <p>Для физических товаров считаем базовую цену, доставку, срок и итог. Для подписок показываем срок ручной обработки.</p>
+    </article>
+  
+    
+  
+    <article class="agent-card">
+      <div class="agent-meta"><span>Передаем менеджеру</span><strong>без имитации оплаты</strong></div>
+      <h3>Передаем менеджеру</h3>
+      <p>Если backend, AI или платежный провайдер не настроены, сайт честно создает заявку и сохраняет ее локально.</p>
+    </article>
+  </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>antichniistore</strong>
+        <span>товары, услуги, подписки, AI-поиск и поставщики в одной витрине</span>
+      </div>
+      <a id="supportLink" href="https://t.me/your_support" target="_blank" rel="noreferrer">@your_support</a>
+    </footer>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Корзина" aria-hidden="true">
+      <div class="drawer-backdrop" data-close-cart=""></div>
+      <div class="drawer-panel cart-panel">
+        <div class="panel-head">
+          <div>
+            <span>Корзина</span>
+            <h2>Товары и источники</h2>
+          </div>
+          <button class="circle-action compact" id="closeCart" type="button" title="Закрыть" aria-label="Закрыть">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+          </button>
+        </div>
+        <div class="cart-list" id="cartList"><article class="empty-card"><strong>Корзина пустая</strong><span>Добавьте товар из каталога или результата AI-поиска.</span></article></div>
+        <div class="cart-summary" id="cartSummary"><span>Итог: 0 ₽</span></div>
+      </div>
+    </aside>
+
+    <aside class="checkout-drawer" id="checkoutDrawer" aria-label="Оформление заказа" aria-hidden="true">
+      <div class="drawer-backdrop" data-close-drawer=""></div>
+      <div class="drawer-panel">
+        <div class="panel-head">
+          <div>
+            <span>Заказ</span>
+            <h2>Оформление</h2>
+          </div>
+          <button class="circle-action compact" id="closeDrawer" type="button" title="Закрыть" aria-label="Закрыть">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+          </button>
+        </div>
+
+        <div class="selected-service" id="selectedService">
+          <span class="placeholder">Выберите карточку в каталоге</span>
+        </div>
+
+        <div class="requirement-box" id="requirementBox">
+          Данные для выбранного предложения появятся здесь.
+        </div>
+
+        <form class="order-form" id="orderForm">
+          <label>
+            Контакт
+            <input name="contact" type="text" placeholder="@telegram или email" required="" maxlength="120">
+          </label>
+
+          <label>
+            <span id="accountLabel">Данные для заказа</span>
+            <input id="accountInput" name="account" type="text" placeholder="логин, email, ID, размер или регион" required="" maxlength="240">
+          </label>
+
+          <fieldset class="payment-methods">
+            <legend>Способ оплаты</legend>
+            <label>
+              <input type="radio" name="paymentMethod" value="card" checked="">
+              <span>Карта РФ / СБП</span>
+            </label>
+            <label>
+              <input type="radio" name="paymentMethod" value="crypto">
+              <span>Crypto напрямую</span>
+            </label>
+            <label>
+              <input type="radio" name="paymentMethod" value="tribute">
+              <span>Tribute / карта</span>
+            </label>
+            <label>
+              <input type="radio" name="paymentMethod" value="stars">
+              <span>Telegram Stars</span>
+            </label>
+            <label>
+              <input type="radio" name="paymentMethod" value="manual">
+              <span>Через менеджера</span>
+            </label>
+          </fieldset>
+
+          <label>
+            Комментарий
+            <textarea name="comment" rows="4" placeholder="детали заявки" maxlength="500"></textarea>
+          </label>
+
+          <button class="primary-button full" type="submit" id="submitButton" disabled="">Создать заявку</button>
+        </form>
+
+        <div class="notice" id="brandNotice">Сайт показывает предварительную стоимость и источники. Финальные условия подтверждает менеджер перед оплатой или выкупом.</div>
+        <div class="order-result" id="orderResult" hidden=""></div>
+      </div>
+    </aside>
+
+    <nav class="bottom-nav" aria-label="Быстрая навигация">
+      <a href="#home">Главная</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#ai-search">AI</a>
+      <button id="bottomCartButton" type="button">Корзина</button>
+      <button id="bottomOrderButton" type="button">Заказ</button>
+    </nav>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="/app.js?v=20260617-pages-filters2" type="module"></script>
+  
+
+</body></html>

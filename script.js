@@ -1,0 +1,1 @@
+document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(item=>item.classList.toggle('active',item===button));const filter=button.dataset.filter;document.querySelectorAll('.project').forEach(project=>project.classList.toggle('hidden',filter!=='all'&&project.dataset.type!==filter));}));

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#20372f">
+    <meta name="description" content="Дизайн-концепт магазина растений с подбором по освещению и короткими советами по уходу.">
+    <title>Комната роста — растения для вашего окна</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К содержанию</a>
+    <div class="demo-ribbon">ДИЗАЙН-МАКЕТ <span aria-hidden="true"></span> ЦЕНЫ И НАЛИЧИЕ УСЛОВНЫЕ</div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Комната роста — на главную">
+          <span class="brand-name">комната<br>роста</span>
+        </a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="#catalog">Растения</a>
+          <a href="#light-guide">Подобрать по свету</a>
+          <a href="credits.html">Источники</a>
+        </nav>
+        <button class="cart-trigger" type="button" data-open-cart aria-haspopup="dialog" aria-controls="cart-dialog">
+          Корзина <span class="cart-count" data-cart-count aria-live="polite">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span> Подбор по освещению</p>
+          <h1 id="hero-title">Растение,<br>которому <em>подойдёт</em><br>ваше окно.</h1>
+          <p class="hero-intro">Яркий свет, полутень или северное окно — начните с места, где будет стоять растение.</p>
+          <a class="hero-cta" href="#light-guide">Подобрать по свету <span aria-hidden="true">↘</span></a>
+          <p class="hero-note">Оцените свет у окна — выбор станет проще.</p>
+        </div>
+        <figure class="hero-photo">
+          <img src="assets/plants/hero-snake-red.jpg" alt="Сансевиерия в терракотовом горшке на ярко-красном фоне" fetchpriority="high" width="2178" height="3347">
+          <figcaption><a href="https://www.pexels.com/photo/vibrant-snake-plant-in-terracotta-pot-29355855/" target="_blank" rel="noreferrer">Фото: Mustafa Akın / Pexels</a></figcaption>
+          <span class="photo-stamp">ВЫБОР<br>НАЧИНАЕТСЯ<br>СО СВЕТА.</span>
+          <div class="hero-photo-controls" role="group" aria-label="Фотографии растений"><button type="button" data-plant-step="-1" aria-label="Предыдущее растение">←</button><output data-plant-count aria-live="polite">01 / 06</output><button type="button" data-plant-step="1" aria-label="Следующее растение">→</button></div>
+        </figure>
+        <div class="hero-index" aria-hidden="true"><span data-plant-current>01</span><i></i><span data-plant-total>06</span></div>
+      </section>
+
+      <div class="plant-lab">
+        <aside class="plant-index" aria-label="Навигация по каталогу">
+          <span class="plant-index-tag">ПОЛЕВОЙ АРХИВ · 2026</span>
+          <strong class="plant-index-number">01—05</strong>
+          <p>Листайте растения, выбирайте свет и собирайте свою зелёную комнату.</p>
+          <a href="#light-guide">К настройке света <span aria-hidden="true">↘</span></a>
+        </aside>
+        <div class="plant-lab-main">
+      <section class="light-guide content-width" id="light-guide" aria-labelledby="light-title">
+        <div class="light-heading">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Подбор начинается здесь</p>
+          <h2 id="light-title">Сколько света у окна?</h2>
+          <p>Выберите освещение — в каталоге останутся растения, которым оно подходит.</p>
+        </div>
+        <div class="light-options" role="group" aria-label="Фильтр растений по уровню освещения">
+          <button class="light-option is-active" type="button" data-filter="all" aria-pressed="true"><span class="light-icon light-icon-all" aria-hidden="true">ALL</span><span>Все растения</span></button>
+          <button class="light-option" type="button" data-filter="bright" aria-pressed="false"><span class="light-icon light-icon-sun" aria-hidden="true">☀</span><span>Яркий рассеянный</span></button>
+          <button class="light-option" type="button" data-filter="medium" aria-pressed="false"><span class="light-icon light-icon-half" aria-hidden="true">◐</span><span>Средний свет</span></button>
+          <button class="light-option" type="button" data-filter="low" aria-pressed="false"><span class="light-icon light-icon-shade" aria-hidden="true">◒</span><span>Тень</span></button>
+        </div>
+        <p class="light-footnote"><span aria-hidden="true">↗</span> Тень — не темнота: рядом с растением всё равно нужен дневной свет.</p>
+      </section>
+
+      <section class="catalog content-width" id="catalog" aria-labelledby="catalog-title">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Подборка для дома</p>
+            <h2 id="catalog-title">Растения <span data-visible-count>05</span></h2>
+          </div>
+          <p class="catalog-note">Пять растений с разными требованиями к свету и поливу.</p>
+        </div>
+        <p class="filter-status" data-filter-status aria-live="polite">Показаны все растения</p>
+        <div class="product-grid" data-product-grid>
+          <article class="product-card" data-product data-lights="bright medium" data-id="monstera" data-name="Монстера" data-price="3290">
+            <a class="product-photo" href="https://www.pexels.com/photo/monstera-plant-in-white-ceramic-pot-12014192/" target="_blank" rel="noreferrer" aria-label="Фото монстеры, автор Laura, Pexels">
+              <img src="assets/plants/monstera.jpg" alt="Монстера в светлом горшке у окна" loading="lazy" width="4160" height="6240">
+              <span class="photo-credit">Laura / Pexels ↗</span>
+            </a>
+            <div class="product-meta"><span>01 / Крупные листья</span><span class="light-tag">Яркий или средний свет</span></div>
+            <h3>Монстера</h3>
+            <p class="product-description">Лучше растёт при ярком рассеянном свете. Прямое полуденное солнце может обжечь листья.</p>
+            <p class="plant-note">Поливайте, когда верхняя треть грунта подсохнет. Растение токсично для кошек и собак.</p>
+            <div class="product-buy"><p class="price">3 290 ₽ <small>цена макета</small></p><button class="add-button" type="button" data-add aria-label="Добавить Монстеру в демонстрационную корзину">Добавить <span aria-hidden="true">+</span></button></div>
+          </article>
+
+          <article class="product-card" data-product data-lights="bright low" data-id="pothos" data-name="Потос" data-price="1490">
+            <a class="product-photo photo-wide" href="https://www.pexels.com/photo/close-up-of-a-pothos-plant-in-a-white-pot-20075996/" target="_blank" rel="noreferrer" aria-label="Фото потоса, автор Aleksander Dumała, Pexels">
+              <img src="assets/plants/pothos.jpg" alt="Потос с зелёными листьями в белом кашпо" loading="lazy" width="4386" height="3339">
+              <span class="photo-credit">Aleksander Dumała / Pexels ↗</span>
+            </a>
+            <div class="product-meta"><span>02 / Свисающие побеги</span><span class="light-tag">Рассеянный свет</span></div>
+            <h3>Потос</h3>
+            <p class="product-description">Лиану можно поставить на полку или в подвесное кашпо. Она переносит слабый свет, но при рассеянном растёт активнее.</p>
+            <p class="plant-note">Дайте грунту просохнуть между поливами. Потос токсичен при проглатывании.</p>
+            <div class="product-buy"><p class="price">1 490 ₽ <small>цена макета</small></p><button class="add-button" type="button" data-add aria-label="Добавить Потос в демонстрационную корзину">Добавить <span aria-hidden="true">+</span></button></div>
+          </article>
+
+          <article class="product-card" data-product data-lights="low bright" data-id="snake" data-name="Сансевиерия" data-price="2190">
+            <a class="product-photo" href="https://www.pexels.com/photo/indoor-snake-plant-in-terracotta-pot-30696803/" target="_blank" rel="noreferrer" aria-label="Фото сансевиерии, автор Brunxs, Pexels">
+              <img src="assets/plants/snake-plant.jpg" alt="Сансевиерия в терракотовом горшке" loading="lazy" width="5040" height="7560">
+              <span class="photo-credit">Brunxs / Pexels ↗</span>
+            </a>
+            <div class="product-meta"><span>03 / Нечастый полив</span><span class="light-tag">Переносит тень</span></div>
+            <h3>Сансевиерия</h3>
+            <p class="product-description">Переносит слабое освещение, но хорошо растёт и при ярком рассеянном свете.</p>
+            <p class="plant-note">Поливайте после полного просыхания грунта. Держите подальше от кошек и собак.</p>
+            <div class="product-buy"><p class="price">2 190 ₽ <small>цена макета</small></p><button class="add-button" type="button" data-add aria-label="Добавить Сансевиерию в демонстрационную корзину">Добавить <span aria-hidden="true">+</span></button></div>
+          </article>
+
+          <article class="product-card" data-product data-lights="medium low bright" data-id="spider" data-name="Хлорофитум" data-price="1290">
+            <a class="product-photo" href="https://www.pexels.com/photo/close-up-of-a-potted-spider-plant-21245012/" target="_blank" rel="noreferrer" aria-label="Фото хлорофитума, автор Amelia Cui, Pexels">
+              <img src="assets/plants/spider-plant.jpg" alt="Хлорофитум с узкими дугообразными листьями" loading="lazy" width="4000" height="6000">
+              <span class="photo-credit">Amelia Cui / Pexels ↗</span>
+            </a>
+            <div class="product-meta"><span>04 / Длинные листья</span><span class="light-tag">Разное освещение</span></div>
+            <h3>Хлорофитум</h3>
+            <p class="product-description">Хлорофитум переносит разный уровень освещения. Берегите листья от прямого солнца.</p>
+            <p class="plant-note">Не оставляйте почву надолго сухой или переувлажнённой. ASPCA считает хлорофитум нетоксичным для кошек и собак.</p>
+            <div class="product-buy"><p class="price">1 290 ₽ <small>цена макета</small></p><button class="add-button" type="button" data-add aria-label="Добавить Хлорофитум в демонстрационную корзину">Добавить <span aria-hidden="true">+</span></button></div>
+          </article>
+
+          <article class="product-card" data-product data-lights="low bright" data-id="zz" data-name="Замиокулькас" data-price="2790">
+            <a class="product-photo" href="https://www.pexels.com/photo/green-plant-on-brown-clay-pot-near-mirror-10194608/" target="_blank" rel="noreferrer" aria-label="Фото замиокулькаса, автор Valeria Palesska, Pexels">
+              <img src="assets/plants/zz-plant.jpg" alt="Замиокулькас в глиняном горшке у зеркала" loading="lazy" width="4000" height="6000">
+              <span class="photo-credit">Valeria Palesska / Pexels ↗</span>
+            </a>
+            <div class="product-meta"><span>05 / Медленный рост</span><span class="light-tag">Переносит тень</span></div>
+            <h3>Замиокулькас</h3>
+            <p class="product-description">Хорошо переносит слабое освещение, если в комнате есть дневной свет.</p>
+            <p class="plant-note">Между поливами дайте грунту полностью просохнуть. Сок растения может быть вреден при проглатывании.</p>
+            <div class="product-buy"><p class="price">2 790 ₽ <small>цена макета</small></p><button class="add-button" type="button" data-add aria-label="Добавить Замиокулькас в демонстрационную корзину">Добавить <span aria-hidden="true">+</span></button></div>
+          </article>
+        </div>
+        <p class="no-results" data-no-results hidden>В подборке нет растений для этих условий. Попробуйте выбрать другой уровень света.</p>
+      </section>
+        </div>
+      </div>
+
+      <section class="window-note" aria-labelledby="window-title">
+        <div class="window-note-inner content-width">
+          <div class="window-mark" aria-hidden="true">01</div>
+          <div>
+            <p class="eyebrow">Даже теневыносливым нужен свет</p>
+            <h2 id="window-title">В полной темноте<br>растения не растут.</h2>
+            <p>Сансевиерия и замиокулькас легче других переносят слабое освещение, но им тоже нужен дневной свет. Если в выбранном месте днём темно, поставьте растение ближе к окну.</p>
+          </div>
+          <a href="#light-guide" class="text-link">Выбрать освещение <span aria-hidden="true">↑</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner content-width">
+        <a class="brand footer-brand" href="#top" aria-label="Комната роста — наверх"><span class="brand-name">комната<br>роста</span></a>
+        <p>Дизайн-концепт магазина.<br>Цены и ассортимент условны.</p>
+        <a href="credits.html">Фото, лицензии и ботанические источники <span aria-hidden="true">↗</span></a>
+        <span class="footer-year">МОСКВА · 2026</span>
+      </div>
+    </footer>
+
+    <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+      <div class="cart-panel">
+        <div class="cart-heading"><div><p class="eyebrow"><span class="eyebrow-dot"></span> Демонстрационный режим</p><h2 id="cart-title">Ваша корзина</h2></div><button class="close-cart" type="button" data-close-cart aria-label="Закрыть корзину">×</button></div>
+        <div class="cart-items" data-cart-items></div>
+        <p class="cart-empty" data-cart-empty>Добавьте растение, чтобы увидеть его здесь.</p>
+        <div class="cart-total"><span>Сумма в макете</span><strong data-cart-total>0 ₽</strong></div>
+        <p class="cart-disclaimer">Здесь нельзя оформить заказ, оплатить покупку или заказать доставку.</p>
+      </div>
+    </dialog>
+    <div class="announcement" role="status" aria-live="polite" data-announcement></div>
+  </body>
+</html>

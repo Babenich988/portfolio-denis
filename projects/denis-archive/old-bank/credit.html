@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10100e">
+    <meta name="description" content="Интерактивный демонстрационный расчёт кредита и каталог концептуальных предложений OLD BANK.">
+    <title>Кредитный расчёт — OLD BANK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="credit.js" defer></script>
+  </head>
+  <body class="credit-page">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="main">
+      <div class="header-shell">
+        <a class="logo" href="index.html" aria-label="OLD BANK — на главную">OLD <span>BANK</span></a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Открыть меню"><span></span><span></span></button>
+        <nav class="navigation" id="primaryNav" aria-label="Основная навигация">
+          <a href="index.html">Главная</a><a href="#calculator">Расчёт</a><a href="#offers">Предложения</a><a href="index.html#footer">О проекте</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="credit-intro" aria-labelledby="creditTitle">
+        <div class="credit-intro__copy">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> Δ / КРЕДИТНЫЙ РАСЧЁТ <span>·</span> OLD BANK</p>
+          <h1 id="creditTitle">Ваш план.<br><em>В ясных цифрах.</em></h1>
+          <p>Настройте сумму и срок, чтобы увидеть ориентировочный ежемесячный платёж. До выбора предложения условия удобно сравнить рядом.</p>
+          <a class="credit-intro__jump" href="#calculator">Начать расчёт <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="credit-intro__seal" aria-hidden="true"><span>Ο</span><small>МЕРA<br>И ЯСНОСТЬ</small><i>✳</i></div>
+      </section>
+
+      <section class="calculator-section" id="calculator" aria-labelledby="calculatorTitle">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> ГЛАВА I <span>·</span> РАСЧЁТ</p>
+          <h2 id="calculatorTitle">Соберите <em>сценарий.</em></h2>
+          <p>Меняйте параметры — результат пересчитывается сразу.</p>
+        </div>
+        <div class="calculator-card">
+          <div class="calculator-fields">
+            <label class="field field--wide" for="loanAmount">
+              <span class="field__top"><span>Сумма кредита</span><span class="field__greek" aria-hidden="true">Α</span></span>
+              <span class="field__control"><input id="loanAmount" type="number" min="100000" max="10000000" step="50000" value="1500000" inputmode="numeric"><span>₽</span></span>
+              <input class="field-range" id="loanAmountRange" type="range" min="100000" max="10000000" step="50000" value="1500000" aria-label="Сумма кредита, ползунок">
+              <span class="field__limits"><span>100 тыс.</span><span>10 млн</span></span>
+            </label>
+            <label class="field" for="loanTerm">
+              <span class="field__top"><span>Срок</span><span class="field__greek" aria-hidden="true">Χ</span></span>
+              <span class="field__control"><input id="loanTerm" type="number" min="6" max="84" step="1" value="60" inputmode="numeric"><span>мес.</span></span>
+              <input class="field-range" id="loanTermRange" type="range" min="6" max="84" step="1" value="60" aria-label="Срок кредита, ползунок">
+              <span class="field__limits"><span>6 мес.</span><span>7 лет</span></span>
+            </label>
+            <label class="field" for="annualRate">
+              <span class="field__top"><span>Демонстрационная ставка</span><span class="field__greek" aria-hidden="true">Ρ</span></span>
+              <span class="field__control"><input id="annualRate" type="number" min="1" max="40" step="0.1" value="18" inputmode="decimal"><span>% годовых</span></span>
+              <input class="field-range" id="annualRateRange" type="range" min="1" max="40" step="0.1" value="18" aria-label="Ставка, ползунок">
+              <span class="field__limits"><span>1%</span><span>40%</span></span>
+            </label>
+            <label class="field" for="monthlyIncome">
+              <span class="field__top"><span>Ваш доход в месяц</span><span class="field__greek" aria-hidden="true">Β</span></span>
+              <span class="field__control"><input id="monthlyIncome" type="number" min="0" max="5000000" step="5000" value="180000" inputmode="numeric"><span>₽</span></span>
+              <span class="field__hint">Нужен только для сравнения платежа с доходом.</span>
+            </label>
+          </div>
+          <aside class="calculator-result" aria-live="polite" aria-atomic="true">
+            <span class="result-overline"><span aria-hidden="true">Ω</span> ПРИМЕРНЫЙ ПЛАТЁЖ / МЕС.</span>
+            <output class="result-amount" id="monthlyPayment" for="loanAmount loanTerm annualRate">38 104 ₽</output>
+            <div class="result-divider"><span></span><span aria-hidden="true">✳</span><span></span></div>
+            <dl class="result-details">
+              <div><dt>Сумма кредита</dt><dd id="resultPrincipal">1 500 000 ₽</dd></div>
+              <div><dt>Всего платежей</dt><dd id="resultTotal">2 286 240 ₽</dd></div>
+              <div><dt>Платёж / доход</dt><dd id="resultShare">21%</dd></div>
+            </dl>
+            <p class="result-note" id="incomeMessage">Доля платежа от указанного дохода — ориентир для сравнения.</p>
+            <a class="button button--gold result-cta" href="#offers">Посмотреть предложения <span aria-hidden="true">↓</span></a>
+          </aside>
+        </div>
+        <p class="calculator-disclaimer"><span aria-hidden="true">✳</span> Учебный расчёт аннуитетного платежа по сумме, ставке и сроку. Он не учитывает комиссии, страховку и другие возможные расходы. Это концепт: параметры ниже вымышлены и не являются условиями реального банка.</p>
+      </section>
+
+      <section class="offers-section" id="offers" aria-labelledby="offersTitle">
+        <div class="section-heading section-heading--light">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> ГЛАВА II <span>·</span> КАТАЛОГ</p>
+          <h2 id="offersTitle">Три пути.<br><em>Один ясный выбор.</em></h2>
+          <p>Демонстрационные сценарии для сравнения. Нажмите на карточку — калькулятор подставит её условия.</p>
+        </div>
+        <div class="offer-grid">
+          <article class="loan-offer" data-rate="15.9" data-term="36">
+            <span class="loan-offer__index">01 / Α</span><span class="loan-offer__ornament" aria-hidden="true">α</span>
+            <p class="loan-offer__kind">КОРОТКИЙ ГОРИЗОНТ</p><h3>Лаконичный</h3>
+            <p class="loan-offer__desc">Меньше срок — быстрее закрывается сценарий.</p>
+            <div class="loan-offer__terms"><span>Демо-ставка</span><strong>15,9% <small>годовых</small></strong></div>
+            <div class="loan-offer__terms"><span>Срок</span><strong>до 3 лет</strong></div>
+            <button class="offer-select" type="button">Применить условия <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="loan-offer loan-offer--featured" data-rate="18" data-term="60">
+            <span class="loan-offer__index">02 / Β</span><span class="loan-offer__ornament" aria-hidden="true">β</span>
+            <p class="loan-offer__kind">СБАЛАНСИРОВАННЫЙ СРОК</p><h3>Равновесие</h3>
+            <p class="loan-offer__desc">Средний срок, чтобы сравнить размер платежа и период.</p>
+            <div class="loan-offer__terms"><span>Демо-ставка</span><strong>18% <small>годовых</small></strong></div>
+            <div class="loan-offer__terms"><span>Срок</span><strong>до 5 лет</strong></div>
+            <button class="offer-select" type="button">Применить условия <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="loan-offer" data-rate="20.5" data-term="84">
+            <span class="loan-offer__index">03 / Γ</span><span class="loan-offer__ornament" aria-hidden="true">γ</span>
+            <p class="loan-offer__kind">БОЛЕЕ ДЛИННЫЙ СРОК</p><h3>Просторный</h3>
+            <p class="loan-offer__desc">Больше времени на выплату — итоговая сумма выше.</p>
+            <div class="loan-offer__terms"><span>Демо-ставка</span><strong>20,5% <small>годовых</small></strong></div>
+            <div class="loan-offer__terms"><span>Срок</span><strong>до 7 лет</strong></div>
+            <button class="offer-select" type="button">Применить условия <span aria-hidden="true">↗</span></button>
+          </article>
+        </div>
+        <p class="catalog-footnote"><span aria-hidden="true">Δ</span> Каталог создан для демонстрации интерфейса OLD BANK. Названия, ставки и сроки — вымышленные примеры.</p>
+      </section>
+    </main>
+    <footer class="site-footer credit-footer">
+      <div class="footer__top">
+        <div class="footer__brand"><a class="logo logo--footer" href="index.html">OLD <span>BANK</span></a><p>Эстетика вне времени.<br>Финансы — без лишнего шума.</p></div>
+        <div class="footer__about"><p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> О ПРОЕКТЕ</p><p>Демонстрационная страница кредитного раздела визуального концепта OLD BANK.</p></div>
+        <a class="back-to-top" href="#main">В начало <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="footer__bottom"><span>OLD BANK · ВИЗУАЛЬНЫЙ КОНЦЕПТ</span><span>АНТИЧНОСТЬ / СОВРЕМЕННОСТЬ</span></div>
+    </footer>
+  </body>
+</html>

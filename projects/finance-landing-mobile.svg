@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="4380" viewBox="0 0 390 4380">
+  <defs>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#0B1220" flood-opacity="0.10"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#172440"/></linearGradient>
+  </defs>
+  <rect width="390" height="4380" fill="#F7F9FC"/>
+  <g id="Hero-mobile">
+    <rect x="12" y="12" width="366" height="1040" rx="28" fill="url(#h)"/>
+    <rect x="28" y="28" width="334" height="64" rx="16" fill="#FFFFFF" opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <rect x="44" y="44" width="30" height="30" rx="9" fill="#3FD99B"/>
+    <path d="M52 65 L59 54 L65 61 L72 51" fill="none" stroke="#0B1220" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="84" y="65" fill="#FFFFFF" font-family="Manrope" font-weight="700" font-size="17">ФИНРАЗБОР</text>
+    <circle cx="332" cy="59" r="18" fill="#FFFFFF" opacity="0.08"/>
+    <path d="M324 54 H340 M324 60 H340 M324 66 H340" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <rect x="28" y="140" width="260" height="34" rx="17" fill="#3FD99B" opacity="0.13" stroke="#3FD99B" stroke-opacity="0.35"/>
+    <circle cx="48" cy="157" r="4" fill="#3FD99B"/>
+    <text x="60" y="162" fill="#8EF1C7" font-family="Manrope" font-weight="600" font-size="11">ФИНАНСОВАЯ ДИАГНОСТИКА БИЗНЕСА</text>
+    <text x="28" y="238" fill="#FFFFFF" font-family="Manrope" font-weight="800" font-size="40" letter-spacing="-1.2">Покажем, где</text>
+    <text x="28" y="284" fill="#FFFFFF" font-family="Manrope" font-weight="800" font-size="40" letter-spacing="-1.2">бизнес теряет</text>
+    <text x="28" y="330" fill="#3FD99B" font-family="Manrope" font-weight="800" font-size="40" letter-spacing="-1.2">деньги — и как</text>
+    <text x="28" y="376" fill="#3FD99B" font-family="Manrope" font-weight="800" font-size="40" letter-spacing="-1.2">это исправить</text>
+    <text x="28" y="424" fill="#B8C2D8" font-family="Manrope" font-size="15">Разберём финансовую модель</text>
+    <text x="28" y="447" fill="#B8C2D8" font-family="Manrope" font-size="15">и процессы, найдём точки потерь</text>
+    <text x="28" y="470" fill="#B8C2D8" font-family="Manrope" font-size="15">и дадим понятный план действий.</text>
+    <rect x="28" y="510" width="334" height="58" rx="29" fill="#3FD99B"/>
+    <text x="195" y="546" text-anchor="middle" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="14">Получить бесплатную консультацию</text>
+    <g transform="translate(28,616)" filter="url(#s)">
+      <rect width="334" height="368" rx="24" fill="#FFFFFF"/>
+      <text x="22" y="40" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="16">Финансовая картина</text>
+      <rect x="196" y="18" width="116" height="30" rx="15" fill="#E8FBF2"/>
+      <circle cx="213" cy="33" r="4" fill="#3FD99B"/>
+      <text x="223" y="37" fill="#17885F" font-family="Manrope" font-weight="600" font-size="10">после разбора</text>
+      <rect x="22" y="72" width="92" height="76" rx="14" fill="#F7F9FC"/><text x="34" y="96" fill="#64748B" font-family="Manrope" font-size="9">Прибыль</text><text x="34" y="126" fill="#0B1220" font-family="Manrope" font-weight="800" font-size="20">+18,4%</text>
+      <rect x="121" y="72" width="92" height="76" rx="14" fill="#F7F9FC"/><text x="133" y="96" fill="#64748B" font-family="Manrope" font-size="9">Потери</text><text x="133" y="126" fill="#0B1220" font-family="Manrope" font-weight="800" font-size="20">−27%</text>
+      <rect x="220" y="72" width="92" height="76" rx="14" fill="#F7F9FC"/><text x="232" y="96" fill="#64748B" font-family="Manrope" font-size="9">Резерв</text><text x="232" y="126" fill="#0B1220" font-family="Manrope" font-weight="800" font-size="20">₽480К</text>
+      <text x="22" y="183" fill="#64748B" font-family="Manrope" font-size="10">Динамика денежного потока</text>
+      <line x1="22" y1="270" x2="312" y2="270" stroke="#E5EAF1"/>
+      <path d="M24 256 C76 248 85 218 126 232 S198 198 234 210 S274 178 310 188" fill="none" stroke="#3FD99B" stroke-width="4" stroke-linecap="round"/>
+      <path d="M24 256 C76 248 85 218 126 232 S198 198 234 210 S274 178 310 188 L310 270 L24 270 Z" fill="#3FD99B" opacity="0.12"/>
+      <rect x="22" y="292" width="290" height="54" rx="14" fill="#0B1220"/>
+      <text x="40" y="317" fill="#FFFFFF" font-family="Manrope" font-weight="700" font-size="11">Найдена точка роста</text>
+      <text x="40" y="334" fill="#B8C2D8" font-family="Manrope" font-size="9">До 480 000 ₽ можно вернуть в оборот</text>
+    </g>
+  </g>
+  <g id="Problems-mobile" transform="translate(0,1120)">
+    <text x="20" y="30" fill="#17885F" font-family="Manrope" font-weight="700" font-size="11" letter-spacing="1">КОГДА НУЖЕН РАЗБОР</text>
+    <text x="20" y="76" fill="#0B1220" font-family="Manrope" font-weight="800" font-size="31" letter-spacing="-0.8">Деньги в бизнесе есть.</text>
+    <text x="20" y="113" fill="#0B1220" font-family="Manrope" font-weight="800" font-size="31" letter-spacing="-0.8">Понимания — не всегда.</text>
+    <text x="20" y="154" fill="#64748B" font-family="Manrope" font-size="14">Превращаем разрозненные цифры</text>
+    <text x="20" y="176" fill="#64748B" font-family="Manrope" font-size="14">в ясную картину и решения.</text>
+    <g transform="translate(20,214)"><rect width="350" height="178" rx="22" fill="#FFFFFF" stroke="#DDE3EC"/><rect x="20" y="20" width="44" height="44" rx="14" fill="#FFF5E2"/><text x="20" y="96" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="19">Прибыль не растёт</text><text x="20" y="126" fill="#64748B" font-family="Manrope" font-size="13">Выручка есть, а свободных денег</text><text x="20" y="147" fill="#64748B" font-family="Manrope" font-size="13">в компании всё равно не хватает.</text></g>
+    <g transform="translate(20,410)"><rect width="350" height="178" rx="22" fill="#FFFFFF" stroke="#DDE3EC"/><rect x="20" y="20" width="44" height="44" rx="14" fill="#EDF2FF"/><text x="20" y="96" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="19">Цифры не сходятся</text><text x="20" y="126" fill="#64748B" font-family="Manrope" font-size="13">Отчёты есть, но решения принимаются</text><text x="20" y="147" fill="#64748B" font-family="Manrope" font-size="13">интуитивно и слишком поздно.</text></g>
+    <g transform="translate(20,606)"><rect width="350" height="178" rx="22" fill="#FFFFFF" stroke="#DDE3EC"/><rect x="20" y="20" width="44" height="44" rx="14" fill="#E8FBF2"/><text x="20" y="96" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="19">Рост стал рискованным</text><text x="20" y="126" fill="#64748B" font-family="Manrope" font-size="13">Непонятно, какое решение выдержит</text><text x="20" y="147" fill="#64748B" font-family="Manrope" font-size="13">финансовая модель бизнеса.</text></g>
+  </g>
+  <g id="Analysis-mobile" transform="translate(0,1980)">
+    <rect x="12" width="366" height="850" rx="28" fill="#FFFFFF"/>
+    <text x="28" y="55" fill="#17885F" font-family="Manrope" font-weight="700" font-size="11" letter-spacing="1">ЧТО МЫ АНАЛИЗИРУЕМ</text>
+    <text x="28" y="104" fill="#0B1220" font-family="Manrope" font-weight="800" font-size="31">От финансовой модели</text>
+    <text x="28" y="141" fill="#0B1220" font-family="Manrope" font-weight="800" font-size="31">до ежедневных решений</text>
+    <text x="28" y="178" fill="#64748B" font-family="Manrope" font-size="13">Ищем связь между цифрами,</text><text x="28" y="199" fill="#64748B" font-family="Manrope" font-size="13">процессами и результатом.</text>
+    <g transform="translate(28,234)"><rect width="334" height="132" rx="20" fill="#F7F9FC"/><circle cx="38" cy="38" r="20" fill="#E8FBF2"/><text x="38" y="44" text-anchor="middle" fill="#17885F" font-family="Manrope" font-weight="800" font-size="13">01</text><text x="72" y="36" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="16">Доходы и маржинальность</text><text x="72" y="62" fill="#64748B" font-family="Manrope" font-size="12">Что приносит прибыль, а что</text><text x="72" y="81" fill="#64748B" font-family="Manrope" font-size="12">создаёт только оборот.</text></g>
+    <g transform="translate(28,382)"><rect width="334" height="132" rx="20" fill="#F7F9FC"/><circle cx="38" cy="38" r="20" fill="#EDF2FF"/><text x="38" y="44" text-anchor="middle" fill="#4E73D8" font-family="Manrope" font-weight="800" font-size="13">02</text><text x="72" y="36" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="16">Расходы и точки потерь</text><text x="72" y="62" fill="#64748B" font-family="Manrope" font-size="12">Где деньги уходят незаметно</text><text x="72" y="81" fill="#64748B" font-family="Manrope" font-size="12">и не дают результата.</text></g>
+    <g transform="translate(28,530)"><rect width="334" height="132" rx="20" fill="#F7F9FC"/><circle cx="38" cy="38" r="20" fill="#FFF5E2"/><text x="38" y="44" text-anchor="middle" fill="#C68B21" font-family="Manrope" font-weight="800" font-size="13">03</text><text x="72" y="36" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="16">Денежный поток</text><text x="72" y="62" fill="#64748B" font-family="Manrope" font-size="12">Как заранее видеть кассовые</text><text x="72" y="81" fill="#64748B" font-family="Manrope" font-size="12">разрывы и нехватку ликвидности.</text></g>
+    <g transform="translate(28,678)"><rect width="334" height="132" rx="20" fill="#F7F9FC"/><circle cx="38" cy="38" r="20" fill="#F0EDFF"/><text x="38" y="44" text-anchor="middle" fill="#7357C8" font-family="Manrope" font-weight="800" font-size="13">04</text><text x="72" y="36" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="16">Сценарии решений</text><text x="72" y="62" fill="#64748B" font-family="Manrope" font-size="12">Что даст эффект быстрее</text><text x="72" y="81" fill="#64748B" font-family="Manrope" font-size="12">и что контролировать дальше.</text></g>
+  </g>
+  <g id="Process-mobile" transform="translate(0,2900)">
+    <text x="20" y="30" fill="#17885F" font-family="Manrope" font-weight="700" font-size="11" letter-spacing="1">КАК ЭТО РАБОТАЕТ</text>
+    <text x="20" y="76" fill="#0B1220" font-family="Manrope" font-weight="800" font-size="31">Три шага к финансовой</text><text x="20" y="113" fill="#0B1220" font-family="Manrope" font-weight="800" font-size="31">ясности</text>
+    <g transform="translate(20,154)"><rect width="350" height="184" rx="22" fill="#0B1220"/><text x="20" y="48" fill="#3FD99B" font-family="Manrope" font-weight="800" font-size="28">01</text><text x="20" y="83" fill="#FFFFFF" font-family="Manrope" font-weight="700" font-size="18">Знакомимся</text><text x="20" y="112" fill="#B8C2D8" font-family="Manrope" font-size="13">Фиксируем цели, контекст и главный</text><text x="20" y="133" fill="#B8C2D8" font-family="Manrope" font-size="13">финансовый вопрос бизнеса.</text></g>
+    <g transform="translate(20,356)"><rect width="350" height="184" rx="22" fill="#FFFFFF" stroke="#DDE3EC"/><text x="20" y="48" fill="#5B8CFF" font-family="Manrope" font-weight="800" font-size="28">02</text><text x="20" y="83" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="18">Погружаемся в цифры</text><text x="20" y="112" fill="#64748B" font-family="Manrope" font-size="13">Анализируем модель, процессы</text><text x="20" y="133" fill="#64748B" font-family="Manrope" font-size="13">и проверяем гипотезы на данных.</text></g>
+    <g transform="translate(20,558)"><rect width="350" height="184" rx="22" fill="#FFFFFF" stroke="#DDE3EC"/><text x="20" y="48" fill="#F0A928" font-family="Manrope" font-weight="800" font-size="28">03</text><text x="20" y="83" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="18">Получаете план</text><text x="20" y="112" fill="#64748B" font-family="Manrope" font-size="13">Показываем точки потерь</text><text x="20" y="133" fill="#64748B" font-family="Manrope" font-size="13">и приоритетные действия.</text></g>
+  </g>
+  <g id="Outcome-mobile" transform="translate(0,3715)">
+    <rect x="12" width="366" height="306" rx="28" fill="#E8FBF2"/>
+    <text x="28" y="54" fill="#17885F" font-family="Manrope" font-weight="700" font-size="11" letter-spacing="1">РЕЗУЛЬТАТ</text>
+    <text x="28" y="101" fill="#0B1220" font-family="Manrope" font-weight="800" font-size="31">Не просто отчёт.</text><text x="28" y="138" fill="#0B1220" font-family="Manrope" font-weight="800" font-size="31">Основа для решений.</text>
+    <text x="28" y="178" fill="#516578" font-family="Manrope" font-size="13">Карта потерь · Приоритетный план</text><text x="28" y="200" fill="#516578" font-family="Manrope" font-size="13">Контрольные показатели · Ясность</text>
+    <rect x="28" y="228" width="334" height="56" rx="28" fill="#0B1220"/><text x="195" y="263" text-anchor="middle" fill="#FFFFFF" font-family="Manrope" font-weight="700" font-size="14">Обсудить мою ситуацию</text>
+  </g>
+  <g id="Final-mobile" transform="translate(0,4085)">
+    <rect x="12" width="366" height="230" rx="28" fill="#0B1220"/>
+    <text x="28" y="55" fill="#FFFFFF" font-family="Manrope" font-weight="800" font-size="27">Начните с бесплатной</text><text x="28" y="89" fill="#FFFFFF" font-family="Manrope" font-weight="800" font-size="27">консультации</text>
+    <text x="28" y="124" fill="#B8C2D8" font-family="Manrope" font-size="12">Сформулируем главный вопрос</text><text x="28" y="143" fill="#B8C2D8" font-family="Manrope" font-size="12">и определим следующий шаг.</text>
+    <rect x="28" y="164" width="334" height="52" rx="26" fill="#3FD99B"/><text x="195" y="197" text-anchor="middle" fill="#0B1220" font-family="Manrope" font-weight="700" font-size="13">Получить бесплатную консультацию</text>
+  </g>
+  <text x="20" y="4354" fill="#8792A4" font-family="Manrope" font-size="10">ФИНРАЗБОР · Финансовые решения для бизнеса</text>
+</svg>

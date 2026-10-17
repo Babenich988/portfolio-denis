@@ -1,0 +1,878 @@
+{
+  "brand": {
+    "name": "antichniistore",
+    "tagline": "Аккуратная витрина товаров, услуг и подписок",
+    "support": "@your_support",
+    "notice": "Сайт показывает предварительную стоимость и источники. Финальные условия подтверждает менеджер перед оплатой или выкупом."
+  },
+  "categories": [
+    { "id": "all", "label": "Все", "icon": "grid" },
+    { "id": "ai-subscriptions", "label": "AI-подписки", "icon": "spark" },
+    { "id": "music-video", "label": "Музыка и видео", "icon": "play" },
+    { "id": "telegram", "label": "Telegram", "icon": "star" },
+    { "id": "games", "label": "Игры", "icon": "gamepad" },
+    { "id": "digital-goods", "label": "Цифровые товары", "icon": "gift" },
+    { "id": "clothing-resale", "label": "Одежда / ресейл", "icon": "jacket" },
+    { "id": "sneakers", "label": "Кроссовки", "icon": "shoe" },
+    { "id": "perfume", "label": "Парфюмерия", "icon": "bottle" },
+    { "id": "cosmetics", "label": "Косметика", "icon": "cosmetic" },
+    { "id": "auto-parts", "label": "Автозапчасти", "icon": "gear" },
+    { "id": "tires", "label": "Шины", "icon": "wheel" },
+    { "id": "accessories", "label": "Аксессуары", "icon": "watch" }
+  ],
+  "sources": [
+    { "id": "antichnii", "name": "antichniistore official", "country": "Digital", "receiveMethod": "Менеджер", "days": "до 3 часов" },
+    { "id": "manager", "name": "Менеджер", "country": "Ручное подтверждение", "receiveMethod": "Менеджер", "days": "до 24 часов" },
+    { "id": "telegram", "name": "Telegram", "country": "Digital", "receiveMethod": "Внутри Telegram", "days": "15-180 минут" },
+    { "id": "goldapple", "name": "Золотое Яблоко", "country": "Россия", "receiveMethod": "Доставка / выкуп", "days": "1-5 дней" },
+    { "id": "letu", "name": "Лэтуаль", "country": "Россия", "receiveMethod": "Доставка / выкуп", "days": "1-5 дней" },
+    { "id": "rivegauche", "name": "РИВ ГОШ", "country": "Россия", "receiveMethod": "Доставка / выкуп", "days": "1-5 дней" },
+    { "id": "poizon", "name": "Poizon", "country": "Китай", "receiveMethod": "Международная доставка", "days": "14-21 день" },
+    { "id": "seoul", "name": "Seoul Supply", "country": "Южная Корея", "receiveMethod": "Международная доставка", "days": "9-16 дней" },
+    { "id": "resale-local", "name": "Archive Room", "country": "Россия", "receiveMethod": "Доставка / встреча", "days": "1-5 дней" },
+    { "id": "auto-local", "name": "Auto Local", "country": "Россия", "receiveMethod": "Доставка / самовывоз", "days": "1-4 дня" },
+    { "id": "eu-parts", "name": "EU Parts", "country": "Европа", "receiveMethod": "Международная доставка", "days": "10-18 дней" },
+    { "id": "tire-stock", "name": "Tire Stock", "country": "Россия", "receiveMethod": "Доставка / самовывоз", "days": "1-5 дней" },
+    { "id": "accessory-studio", "name": "Accessory Studio", "country": "Россия", "receiveMethod": "Доставка / самовывоз", "days": "1-5 дней" },
+    { "id": "unicorn", "name": "Unicorn", "country": "Россия", "receiveMethod": "Доставка / выкуп", "days": "15-19 дней" }
+  ],
+  "products": [
+    {
+      "id": "chatgpt",
+      "category": "ai-subscriptions",
+      "title": "ChatGPT",
+      "subtitle": "Plus / Team через менеджера",
+      "description": "Поможем оформить или продлить доступ. Сайт не подключает аккаунт автоматически: заявка уходит менеджеру.",
+      "requirements": "Укажите email аккаунта, нужный тариф, регион и срок.",
+      "accountPlaceholder": "email аккаунта OpenAI",
+      "type": "цифровой товар",
+      "seller": "antichniistore official",
+      "sellerTag": "@your_support",
+      "rating": 4.9,
+      "reviews": 306,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Менеджер",
+      "deliveryTime": "до 3 часов",
+      "sales": 980,
+      "createdAt": "2026-06-01",
+      "asset": "/assets/chatgpt.svg",
+      "specs": [ "AI-подписка", "Ручное подтверждение", "Без передачи пароля по умолчанию" ],
+      "warranty": "Гарантия на корректность оформленной услуги после подтверждения менеджером.",
+      "plans": [
+        { "id": "chatgpt-plus-1m", "label": "Plus 1 месяц", "price": 2990, "currency": "RUB", "stars": 880 },
+        { "id": "chatgpt-team-1m", "label": "Team 1 месяц", "price": 4490, "currency": "RUB", "stars": 1320 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "antichnii", "itemPrice": 2990, "deliveryCost": 0, "markup": 0, "finalPrice": 2990, "tag": "official" },
+        { "sourceId": "manager", "itemPrice": 2790, "deliveryCost": 0, "markup": 200, "finalPrice": 2990, "tag": "ручная заявка" }
+      ]
+    },
+    {
+      "id": "claude-pro",
+      "category": "ai-subscriptions",
+      "title": "Claude Pro",
+      "subtitle": "Pro доступ через заявку",
+      "description": "Предварительная заявка на оформление Claude Pro. Условия подтверждаются менеджером.",
+      "requirements": "Укажите email, регион аккаунта и срок.",
+      "accountPlaceholder": "email аккаунта Claude",
+      "type": "цифровой товар",
+      "seller": "antichniistore official",
+      "sellerTag": "@your_support",
+      "rating": 4.9,
+      "reviews": 52,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Менеджер",
+      "deliveryTime": "до 3 часов",
+      "sales": 430,
+      "createdAt": "2026-06-03",
+      "specs": [ "AI-подписка", "Ручное подтверждение", "Менеджер проверяет регион" ],
+      "plans": [
+        { "id": "claude-pro-1m", "label": "Pro 1 месяц", "price": 3190, "currency": "RUB", "stars": 938 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "antichnii", "itemPrice": 3190, "deliveryCost": 0, "markup": 0, "finalPrice": 3190, "tag": "official" }
+      ]
+    },
+    {
+      "id": "perplexity-pro",
+      "category": "ai-subscriptions",
+      "title": "Perplexity Pro",
+      "subtitle": "Pro план",
+      "description": "Оформление доступа к Perplexity Pro через заявку менеджеру.",
+      "requirements": "Укажите email и желаемый срок подписки.",
+      "accountPlaceholder": "email аккаунта Perplexity",
+      "type": "цифровой товар",
+      "seller": "antichniistore official",
+      "rating": 4.8,
+      "reviews": 41,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Менеджер",
+      "deliveryTime": "до 3 часов",
+      "sales": 280,
+      "createdAt": "2026-06-04",
+      "specs": [ "AI-подписка", "Ручная заявка", "Подбор региона" ],
+      "plans": [
+        { "id": "perplexity-pro-1m", "label": "Pro 1 месяц", "price": 2890, "currency": "RUB", "stars": 850 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "antichnii", "itemPrice": 2890, "deliveryCost": 0, "markup": 0, "finalPrice": 2890, "tag": "official" }
+      ]
+    },
+    {
+      "id": "midjourney-basic",
+      "category": "ai-subscriptions",
+      "title": "Midjourney Basic",
+      "subtitle": "Basic план",
+      "description": "Заявка на оплату Midjourney Basic. Сайт показывает предварительную цену.",
+      "requirements": "Укажите Discord/email и нужный срок.",
+      "accountPlaceholder": "Discord или email",
+      "type": "цифровой товар",
+      "seller": "antichniistore official",
+      "rating": 4.8,
+      "reviews": 67,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Менеджер",
+      "deliveryTime": "до 3 часов",
+      "sales": 350,
+      "createdAt": "2026-06-05",
+      "specs": [ "AI-генерация", "Basic", "Ручное оформление" ],
+      "plans": [
+        { "id": "midjourney-basic-1m", "label": "Basic 1 месяц", "price": 1990, "currency": "RUB", "stars": 585 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "antichnii", "itemPrice": 1990, "deliveryCost": 0, "markup": 0, "finalPrice": 1990, "tag": "official" }
+      ]
+    },
+    {
+      "id": "youtube-premium",
+      "category": "music-video",
+      "title": "YouTube Premium",
+      "subtitle": "Individual / Family",
+      "description": "Заявка на оформление YouTube Premium с подбором региона.",
+      "requirements": "Укажите Google email, регион и тариф.",
+      "accountPlaceholder": "Google email",
+      "type": "услуга",
+      "seller": "antichniistore official",
+      "rating": 4.8,
+      "reviews": 93,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Менеджер",
+      "deliveryTime": "до 3 часов",
+      "sales": 510,
+      "createdAt": "2026-05-29",
+      "specs": [ "Музыка и видео", "Ручное подтверждение", "Подбор региона" ],
+      "plans": [
+        { "id": "youtube-1m", "label": "1 месяц", "price": 549, "currency": "RUB", "stars": 162 },
+        { "id": "youtube-family", "label": "Family", "price": 1290, "currency": "RUB", "stars": 380 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "antichnii", "itemPrice": 549, "deliveryCost": 0, "markup": 0, "finalPrice": 549, "tag": "official" }
+      ]
+    },
+    {
+      "id": "spotify",
+      "category": "music-video",
+      "title": "Spotify Premium",
+      "subtitle": "Individual, Duo и Family",
+      "description": "Оформление или продление Premium с подбором региона.",
+      "requirements": "Укажите email аккаунта Spotify, нужный регион и срок подписки.",
+      "accountPlaceholder": "email аккаунта Spotify",
+      "type": "услуга",
+      "seller": "antichniistore official",
+      "rating": 4.9,
+      "reviews": 184,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Менеджер",
+      "deliveryTime": "до 3 часов",
+      "sales": 920,
+      "createdAt": "2026-05-02",
+      "asset": "/assets/spotify.svg",
+      "specs": [ "Музыка", "Ручное выполнение", "15-180 минут" ],
+      "plans": [
+        { "id": "spotify-1m", "label": "1 месяц", "price": 399, "currency": "RUB", "stars": 117 },
+        { "id": "spotify-3m", "label": "3 месяца", "price": 1090, "currency": "RUB", "stars": 321 },
+        { "id": "spotify-family", "label": "Family", "price": 1490, "currency": "RUB", "stars": 438 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "antichnii", "itemPrice": 399, "deliveryCost": 0, "markup": 0, "finalPrice": 399, "tag": "official" },
+        { "sourceId": "manager", "itemPrice": 379, "deliveryCost": 0, "markup": 20, "finalPrice": 399, "tag": "ручная заявка" }
+      ]
+    },
+    {
+      "id": "apple-music",
+      "category": "music-video",
+      "title": "Apple Music",
+      "subtitle": "Individual и Family",
+      "description": "Оформление Apple Music с выбором подходящего плана и срока.",
+      "requirements": "Укажите Apple ID email, регион аккаунта и нужный тариф.",
+      "accountPlaceholder": "Apple ID email",
+      "type": "услуга",
+      "seller": "antichniistore official",
+      "rating": 4.8,
+      "reviews": 131,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Менеджер",
+      "deliveryTime": "до 3 часов",
+      "sales": 770,
+      "createdAt": "2026-05-03",
+      "asset": "/assets/apple-music.svg",
+      "specs": [ "Музыка", "Apple ID", "Ручное оформление" ],
+      "plans": [
+        { "id": "apple-music-1m", "label": "1 месяц", "price": 449, "currency": "RUB", "stars": 132 },
+        { "id": "apple-music-family", "label": "Family", "price": 1390, "currency": "RUB", "stars": 409 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "antichnii", "itemPrice": 449, "deliveryCost": 0, "markup": 0, "finalPrice": 449, "tag": "official" }
+      ]
+    },
+    {
+      "id": "soundcloud-go",
+      "category": "music-video",
+      "title": "SoundCloud Go+",
+      "subtitle": "Go+ подписка",
+      "description": "Заявка на оплату SoundCloud Go+.",
+      "requirements": "Укажите email аккаунта SoundCloud и срок.",
+      "accountPlaceholder": "email аккаунта SoundCloud",
+      "type": "услуга",
+      "seller": "antichniistore official",
+      "rating": 4.7,
+      "reviews": 64,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Менеджер",
+      "deliveryTime": "до 3 часов",
+      "sales": 410,
+      "createdAt": "2026-05-05",
+      "asset": "/assets/soundcloud.svg",
+      "specs": [ "Музыка", "Go+", "Ручное оформление" ],
+      "plans": [
+        { "id": "soundcloud-1m", "label": "1 месяц", "price": 349, "currency": "RUB", "stars": 103 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "antichnii", "itemPrice": 349, "deliveryCost": 0, "markup": 0, "finalPrice": 349, "tag": "official" }
+      ]
+    },
+    {
+      "id": "netflix",
+      "category": "music-video",
+      "title": "Netflix",
+      "subtitle": "Standard / Premium",
+      "description": "Заявка на оплату Netflix с ручным подтверждением условий.",
+      "requirements": "Укажите email аккаунта, регион и тариф.",
+      "accountPlaceholder": "email аккаунта Netflix",
+      "type": "услуга",
+      "seller": "antichniistore official",
+      "rating": 4.8,
+      "reviews": 88,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Менеджер",
+      "deliveryTime": "до 3 часов",
+      "sales": 640,
+      "createdAt": "2026-05-06",
+      "asset": "/assets/netflix.svg",
+      "specs": [ "Видео", "Ручная заявка", "Подбор региона" ],
+      "plans": [
+        { "id": "netflix-standard", "label": "Standard", "price": 990, "currency": "RUB", "stars": 291 },
+        { "id": "netflix-premium", "label": "Premium", "price": 1490, "currency": "RUB", "stars": 438 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "antichnii", "itemPrice": 990, "deliveryCost": 0, "markup": 0, "finalPrice": 990, "tag": "official" }
+      ]
+    },
+    {
+      "id": "apple-gift-card",
+      "category": "digital-goods",
+      "title": "Apple Gift Card",
+      "subtitle": "Пополнение Apple ID",
+      "description": "Подарочные карты Apple по заявке менеджеру. Номинал и регион подтверждаются перед оплатой.",
+      "requirements": "Укажите регион Apple ID и желаемый номинал.",
+      "accountPlaceholder": "регион Apple ID и номинал",
+      "type": "цифровой товар",
+      "seller": "antichniistore official",
+      "rating": 4.9,
+      "reviews": 212,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Менеджер",
+      "deliveryTime": "до 3 часов",
+      "sales": 860,
+      "createdAt": "2026-05-07",
+      "asset": "/assets/apple-gift.svg",
+      "specs": [ "Цифровой код", "Apple ID", "Регион важен" ],
+      "plans": [
+        { "id": "apple-gift-10", "label": "10 USD", "price": 1290, "currency": "RUB", "stars": 379 },
+        { "id": "apple-gift-25", "label": "25 USD", "price": 2990, "currency": "RUB", "stars": 879 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "antichnii", "itemPrice": 1290, "deliveryCost": 0, "markup": 0, "finalPrice": 1290, "tag": "official" }
+      ]
+    },
+    {
+      "id": "telegram-premium",
+      "category": "telegram",
+      "title": "Telegram Premium",
+      "subtitle": "3 / 6 / 12 месяцев",
+      "description": "Оформление Telegram Premium через заявку.",
+      "requirements": "Укажите username или номер Telegram и срок.",
+      "accountPlaceholder": "@username или номер Telegram",
+      "type": "цифровой товар",
+      "seller": "antichniistore official",
+      "rating": 4.8,
+      "reviews": 276,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Внутри Telegram",
+      "deliveryTime": "15-180 минут",
+      "sales": 1100,
+      "createdAt": "2026-05-08",
+      "asset": "/assets/telegram-premium.svg",
+      "specs": [ "Telegram", "Premium", "Username обязателен" ],
+      "plans": [
+        { "id": "tg-premium-3m", "label": "3 месяца", "price": 349, "currency": "RUB", "stars": 103 },
+        { "id": "tg-premium-12m", "label": "12 месяцев", "price": 1790, "currency": "RUB", "stars": 526 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "telegram", "itemPrice": 349, "deliveryCost": 0, "markup": 0, "finalPrice": 349, "tag": "telegram" },
+        { "sourceId": "manager", "itemPrice": 349, "deliveryCost": 0, "markup": 80, "finalPrice": 429, "tag": "менеджер" }
+      ]
+    },
+    {
+      "id": "telegram-stars",
+      "category": "telegram",
+      "title": "Telegram Stars",
+      "subtitle": "Пополнение Stars",
+      "description": "Заявка на пополнение Telegram Stars. Сайт не списывает оплату автоматически без настроенного провайдера.",
+      "requirements": "Укажите username и количество Stars.",
+      "accountPlaceholder": "@username и количество Stars",
+      "type": "цифровой товар",
+      "seller": "antichniistore official",
+      "rating": 4.9,
+      "reviews": 421,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Внутри Telegram",
+      "deliveryTime": "15-180 минут",
+      "sales": 1240,
+      "createdAt": "2026-05-09",
+      "asset": "/assets/telegram-stars.svg",
+      "specs": [ "Telegram", "Stars", "Username обязателен" ],
+      "plans": [
+        { "id": "tg-stars-100", "label": "100 Stars", "price": 189, "currency": "RUB", "stars": 100 },
+        { "id": "tg-stars-500", "label": "500 Stars", "price": 899, "currency": "RUB", "stars": 500 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "telegram", "itemPrice": 189, "deliveryCost": 0, "markup": 0, "finalPrice": 189, "tag": "telegram" }
+      ]
+    },
+    {
+      "id": "supercell",
+      "category": "games",
+      "title": "Supercell",
+      "subtitle": "Игровые товары и пополнения",
+      "description": "Заявка на игровые товары Supercell. Детали заказа подтверждает менеджер.",
+      "requirements": "Укажите игру, player tag, регион и нужный товар.",
+      "accountPlaceholder": "игра, player tag, регион",
+      "type": "цифровой товар",
+      "seller": "antichniistore official",
+      "rating": 4.8,
+      "reviews": 137,
+      "official": true,
+      "stock": "В наличии",
+      "receiveMethod": "Менеджер",
+      "deliveryTime": "до 24 часов",
+      "sales": 520,
+      "createdAt": "2026-05-10",
+      "asset": "/assets/supercell.svg",
+      "specs": [ "Игры", "Player tag", "Ручное подтверждение" ],
+      "plans": [
+        { "id": "supercell-small", "label": "Малый пакет", "price": 690, "currency": "RUB", "stars": 203 },
+        { "id": "supercell-medium", "label": "Средний пакет", "price": 1490, "currency": "RUB", "stars": 438 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "antichnii", "itemPrice": 690, "deliveryCost": 0, "markup": 0, "finalPrice": 690, "tag": "official" }
+      ]
+    },
+    {
+      "id": "archive-jacket",
+      "category": "clothing-resale",
+      "title": "Archive Jacket",
+      "subtitle": "Одежда / ресейл",
+      "description": "Подбор архивной куртки по размеру и бюджету.",
+      "requirements": "Укажите размер, цвет, город доставки и пожелания.",
+      "accountPlaceholder": "размер, цвет, город",
+      "type": "товар",
+      "seller": "Archive Room",
+      "rating": 4.7,
+      "reviews": 42,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / встреча",
+      "deliveryTime": "1-5 дней",
+      "sales": 140,
+      "createdAt": "2026-05-16",
+      "specs": [ "Ресейл", "Размер уточняется", "Состояние по запросу" ],
+      "plans": [
+        { "id": "archive-jacket-base", "label": "1 шт.", "price": 8700, "currency": "RUB", "stars": 2559 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "resale-local", "itemPrice": 7600, "deliveryCost": 450, "markup": 1140, "finalPrice": 9190, "tag": "локально" },
+        { "sourceId": "poizon", "itemPrice": 6900, "deliveryCost": 980, "markup": 1035, "finalPrice": 8915, "tag": "дешевле" }
+      ]
+    },
+    {
+      "id": "minimal-hoodie",
+      "category": "clothing-resale",
+      "title": "Minimal Hoodie",
+      "subtitle": "Худи / ресейл",
+      "description": "Поиск худи в минималистичном стиле по размеру.",
+      "requirements": "Укажите размер, бренд-референсы и бюджет.",
+      "accountPlaceholder": "размер, бренд, бюджет",
+      "type": "товар",
+      "seller": "Archive Room",
+      "rating": 4.6,
+      "reviews": 38,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / встреча",
+      "deliveryTime": "1-5 дней",
+      "sales": 118,
+      "createdAt": "2026-05-17",
+      "specs": [ "Одежда", "Подбор размера", "Фото перед выкупом" ],
+      "plans": [
+        { "id": "minimal-hoodie-base", "label": "1 шт.", "price": 6200, "currency": "RUB", "stars": 1824 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "resale-local", "itemPrice": 5400, "deliveryCost": 390, "markup": 810, "finalPrice": 6600, "tag": "локально" }
+      ]
+    },
+    {
+      "id": "air-force",
+      "category": "sneakers",
+      "title": "Nike Air Force 1",
+      "subtitle": "Кроссовки",
+      "description": "Подбор пары по размеру с расчетом доставки и наценки.",
+      "requirements": "Укажите размер, цвет, город доставки и бюджет.",
+      "accountPlaceholder": "размер, цвет, город",
+      "type": "товар",
+      "seller": "Poizon buyer",
+      "rating": 4.8,
+      "reviews": 76,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Международная доставка",
+      "deliveryTime": "14-21 день",
+      "sales": 300,
+      "createdAt": "2026-05-18",
+      "specs": [ "Кроссовки", "Размер EU/US", "Фото перед выкупом" ],
+      "plans": [
+        { "id": "air-force-base", "label": "1 пара", "price": 12900, "currency": "RUB", "stars": 3794 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "poizon", "itemPrice": 9800, "deliveryCost": 950, "markup": 1470, "finalPrice": 12220, "tag": "дешевле" },
+        { "sourceId": "seoul", "itemPrice": 10500, "deliveryCost": 1180, "markup": 1575, "finalPrice": 13255, "tag": "оптимально" }
+      ]
+    },
+    {
+      "id": "new-balance-1906",
+      "category": "sneakers",
+      "title": "New Balance 1906R",
+      "subtitle": "Кроссовки",
+      "description": "Подбор New Balance 1906R по размеру и цвету.",
+      "requirements": "Укажите размер, цвет и бюджет.",
+      "accountPlaceholder": "размер, цвет, город",
+      "type": "товар",
+      "seller": "Poizon buyer",
+      "rating": 4.7,
+      "reviews": 55,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Международная доставка",
+      "deliveryTime": "14-21 день",
+      "sales": 210,
+      "createdAt": "2026-05-19",
+      "specs": [ "Кроссовки", "Размер EU/US", "Фото перед выкупом" ],
+      "plans": [
+        { "id": "nb-1906-base", "label": "1 пара", "price": 15400, "currency": "RUB", "stars": 4529 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "poizon", "itemPrice": 11800, "deliveryCost": 980, "markup": 1770, "finalPrice": 14550, "tag": "дешевле" }
+      ]
+    },
+    {
+      "id": "dior-sauvage",
+      "category": "perfume",
+      "title": "Dior Sauvage",
+      "subtitle": "Парфюмерия",
+      "description": "Подбор парфюма по источникам: Золотое Яблоко, Лэтуаль, РИВ ГОШ.",
+      "requirements": "Укажите объем, город доставки и предпочтительный источник.",
+      "accountPlaceholder": "объем, город, источник",
+      "type": "товар",
+      "seller": "Beauty buyer",
+      "rating": 4.9,
+      "reviews": 63,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / выкуп",
+      "deliveryTime": "1-5 дней",
+      "sales": 170,
+      "createdAt": "2026-05-20",
+      "specs": [ "Парфюм", "Источник текстом", "Без копирования изображений" ],
+      "plans": [
+        { "id": "dior-sauvage-60", "label": "60 мл", "price": 9900, "currency": "RUB", "stars": 2912 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "goldapple", "itemPrice": 8700, "deliveryCost": 390, "markup": 1305, "finalPrice": 10395, "tag": "оптимально" },
+        { "sourceId": "letu", "itemPrice": 8990, "deliveryCost": 390, "markup": 1349, "finalPrice": 10729, "tag": "сравнить" },
+        { "sourceId": "rivegauche", "itemPrice": 9100, "deliveryCost": 390, "markup": 1365, "finalPrice": 10855, "tag": "альтернатива" }
+      ]
+    },
+    {
+      "id": "tom-ford-oud",
+      "category": "perfume",
+      "title": "Tom Ford Oud Wood",
+      "subtitle": "Парфюмерия",
+      "description": "Подбор аромата по доступным российским источникам.",
+      "requirements": "Укажите объем и город доставки.",
+      "accountPlaceholder": "объем, город",
+      "type": "товар",
+      "seller": "Beauty buyer",
+      "rating": 4.8,
+      "reviews": 39,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / выкуп",
+      "deliveryTime": "1-5 дней",
+      "sales": 120,
+      "createdAt": "2026-05-21",
+      "specs": [ "Парфюм", "Источник текстом", "Проверка наличия" ],
+      "plans": [
+        { "id": "tf-oud-50", "label": "50 мл", "price": 19900, "currency": "RUB", "stars": 5853 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "goldapple", "itemPrice": 16900, "deliveryCost": 390, "markup": 3380, "finalPrice": 20670, "tag": "оптимально" },
+        { "sourceId": "rivegauche", "itemPrice": 17400, "deliveryCost": 390, "markup": 3480, "finalPrice": 21270, "tag": "альтернатива" }
+      ]
+    },
+    {
+      "id": "serum-vitamin-c",
+      "category": "cosmetics",
+      "title": "Vitamin C Serum",
+      "subtitle": "Косметика",
+      "description": "Подбор сыворотки по источникам: Золотое Яблоко, Лэтуаль, РИВ ГОШ.",
+      "requirements": "Укажите бренд, объем, город доставки и ограничения по составу.",
+      "accountPlaceholder": "бренд, объем, город",
+      "type": "товар",
+      "seller": "Beauty buyer",
+      "rating": 4.7,
+      "reviews": 44,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / выкуп",
+      "deliveryTime": "1-5 дней",
+      "sales": 160,
+      "createdAt": "2026-05-22",
+      "specs": [ "Косметика", "Источник текстом", "Проверка наличия" ],
+      "plans": [
+        { "id": "serum-vitamin-c-base", "label": "1 шт.", "price": 2490, "currency": "RUB", "stars": 732 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "goldapple", "itemPrice": 2100, "deliveryCost": 290, "markup": 315, "finalPrice": 2705, "tag": "оптимально" },
+        { "sourceId": "letu", "itemPrice": 2300, "deliveryCost": 290, "markup": 345, "finalPrice": 2935, "tag": "сравнить" }
+      ]
+    },
+    {
+      "id": "cushion-foundation",
+      "category": "cosmetics",
+      "title": "Cushion Foundation",
+      "subtitle": "Косметика",
+      "description": "Подбор кушона по оттенку и источнику.",
+      "requirements": "Укажите бренд, оттенок и город доставки.",
+      "accountPlaceholder": "бренд, оттенок, город",
+      "type": "товар",
+      "seller": "Beauty buyer",
+      "rating": 4.6,
+      "reviews": 29,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / выкуп",
+      "deliveryTime": "1-5 дней",
+      "sales": 95,
+      "createdAt": "2026-05-23",
+      "specs": [ "Косметика", "Оттенок", "Проверка наличия" ],
+      "plans": [
+        { "id": "cushion-base", "label": "1 шт.", "price": 3190, "currency": "RUB", "stars": 938 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "goldapple", "itemPrice": 2800, "deliveryCost": 290, "markup": 420, "finalPrice": 3510, "tag": "оптимально" },
+        { "sourceId": "rivegauche", "itemPrice": 2990, "deliveryCost": 290, "markup": 449, "finalPrice": 3729, "tag": "альтернатива" }
+      ]
+    },
+    {
+      "id": "brake-pads",
+      "category": "auto-parts",
+      "title": "Тормозные колодки",
+      "subtitle": "Автозапчасти",
+      "description": "Подбор колодок по VIN или модели авто.",
+      "requirements": "Укажите VIN, марку, модель, год и город.",
+      "accountPlaceholder": "VIN, модель, год, город",
+      "type": "товар",
+      "seller": "Auto Local",
+      "rating": 4.7,
+      "reviews": 58,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / самовывоз",
+      "deliveryTime": "1-4 дня",
+      "sales": 180,
+      "createdAt": "2026-05-24",
+      "specs": [ "Автозапчасти", "VIN", "Проверка совместимости" ],
+      "plans": [
+        { "id": "brake-pads-base", "label": "комплект", "price": 5600, "currency": "RUB", "stars": 1647 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "auto-local", "itemPrice": 4800, "deliveryCost": 390, "markup": 720, "finalPrice": 5910, "tag": "локально" },
+        { "sourceId": "eu-parts", "itemPrice": 4300, "deliveryCost": 980, "markup": 645, "finalPrice": 5925, "tag": "европа" }
+      ]
+    },
+    {
+      "id": "car-battery",
+      "category": "auto-parts",
+      "title": "Аккумулятор 60Ah",
+      "subtitle": "Автозапчасти",
+      "description": "Подбор аккумулятора по модели автомобиля и городу.",
+      "requirements": "Укажите модель авто, год, полярность и город.",
+      "accountPlaceholder": "модель авто, год, город",
+      "type": "товар",
+      "seller": "Auto Local",
+      "rating": 4.7,
+      "reviews": 47,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / самовывоз",
+      "deliveryTime": "1-4 дня",
+      "sales": 155,
+      "createdAt": "2026-05-25",
+      "specs": [ "Автозапчасти", "60Ah", "Проверка совместимости" ],
+      "plans": [
+        { "id": "battery-60-base", "label": "1 шт.", "price": 8900, "currency": "RUB", "stars": 2618 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "auto-local", "itemPrice": 7600, "deliveryCost": 590, "markup": 1140, "finalPrice": 9330, "tag": "локально" }
+      ]
+    },
+    {
+      "id": "michelin-r17",
+      "category": "tires",
+      "title": "Michelin R17",
+      "subtitle": "Шины",
+      "description": "Подбор шин R17 по сезону, размеру и городу.",
+      "requirements": "Укажите размер, сезон, количество и город.",
+      "accountPlaceholder": "размер, сезон, количество, город",
+      "type": "товар",
+      "seller": "Tire Stock",
+      "rating": 4.8,
+      "reviews": 66,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / самовывоз",
+      "deliveryTime": "1-5 дней",
+      "sales": 220,
+      "createdAt": "2026-05-26",
+      "specs": [ "Шины", "R17", "Сезон по запросу" ],
+      "plans": [
+        { "id": "michelin-r17-one", "label": "1 шт.", "price": 15400, "currency": "RUB", "stars": 4529 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "tire-stock", "itemPrice": 13200, "deliveryCost": 900, "markup": 1980, "finalPrice": 16080, "tag": "локально" }
+      ]
+    },
+    {
+      "id": "pirelli-r18",
+      "category": "tires",
+      "title": "Pirelli R18",
+      "subtitle": "Шины",
+      "description": "Подбор шин R18 по сезону и городу.",
+      "requirements": "Укажите размер, сезон, количество и город.",
+      "accountPlaceholder": "размер, сезон, количество, город",
+      "type": "товар",
+      "seller": "Tire Stock",
+      "rating": 4.7,
+      "reviews": 51,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / самовывоз",
+      "deliveryTime": "1-5 дней",
+      "sales": 180,
+      "createdAt": "2026-05-27",
+      "specs": [ "Шины", "R18", "Сезон по запросу" ],
+      "plans": [
+        { "id": "pirelli-r18-one", "label": "1 шт.", "price": 16900, "currency": "RUB", "stars": 4971 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "tire-stock", "itemPrice": 14500, "deliveryCost": 900, "markup": 2175, "finalPrice": 17575, "tag": "локально" }
+      ]
+    },
+    {
+      "id": "silver-ring",
+      "category": "accessories",
+      "title": "Silver Ring",
+      "subtitle": "Аксессуары",
+      "description": "Подбор серебряного кольца по размеру и стилю.",
+      "requirements": "Укажите размер, стиль и город доставки.",
+      "accountPlaceholder": "размер, стиль, город",
+      "type": "товар",
+      "seller": "Accessory Studio",
+      "rating": 4.8,
+      "reviews": 34,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / самовывоз",
+      "deliveryTime": "1-5 дней",
+      "sales": 130,
+      "createdAt": "2026-05-28",
+      "specs": [ "Аксессуар", "Размер", "Фото перед покупкой" ],
+      "plans": [
+        { "id": "silver-ring-base", "label": "1 шт.", "price": 4200, "currency": "RUB", "stars": 1235 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "accessory-studio", "itemPrice": 3600, "deliveryCost": 290, "markup": 540, "finalPrice": 4430, "tag": "локально" }
+      ]
+    },
+    {
+      "id": "leather-bag",
+      "category": "accessories",
+      "title": "Leather Bag",
+      "subtitle": "Аксессуары",
+      "description": "Подбор кожаной сумки по стилю и бюджету.",
+      "requirements": "Укажите желаемый стиль, цвет и бюджет.",
+      "accountPlaceholder": "стиль, цвет, бюджет",
+      "type": "товар",
+      "seller": "Accessory Studio",
+      "rating": 4.7,
+      "reviews": 28,
+      "official": false,
+      "stock": "В наличии",
+      "receiveMethod": "Доставка / самовывоз",
+      "deliveryTime": "1-5 дней",
+      "sales": 100,
+      "createdAt": "2026-05-29",
+      "specs": [ "Аксессуар", "Цвет", "Фото перед покупкой" ],
+      "plans": [
+        { "id": "leather-bag-base", "label": "1 шт.", "price": 11900, "currency": "RUB", "stars": 3500 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "accessory-studio", "itemPrice": 9800, "deliveryCost": 590, "markup": 1470, "finalPrice": 11860, "tag": "локально" }
+      ]
+    },
+    {
+      "id": "unicorn-new-balance-530-white-silver-navy",
+      "category": "sneakers",
+      "title": "New Balance 530 White Silver Navy",
+      "subtitle": "Unicorn — оригинальные кроссовки",
+      "description": "Заказ и доставка оригинальных кроссовок через сервис Unicorn. Быстрая обработка заявки.",
+      "requirements": "Укажите размер и город для заказа.",
+      "accountPlaceholder": "размер и город",
+      "type": "товар",
+      "seller": "Unicorn",
+      "sellerTag": "unicorngo.ru",
+      "rating": 4.7,
+      "reviews": 0,
+      "official": false,
+      "stock": "В наличии и под заказ",
+      "receiveMethod": "Доставка / выкуп",
+      "deliveryTime": "под уточнение",
+      "sales": 0,
+      "createdAt": "2026-06-18",
+      "visualMode": "photo",
+      "asset": "https://proxy.b2baisolutions.io/v1/image?url=https%3A%2F%2Fcdn.poizon.com%2Fpro-img%2Forigin-img%2F20240726%2F1eed0defcabe44b989217ec6ef6a8431.jpg&w=600&q=75&fit=contain&fmt=auto&trim=0&v=1",
+      "specs": [ "Unicorn", "Заказ и доставка", "Быстрая обработка" ],
+      "warranty": "Гарантия оригинальности товара, возврат и обмен по правилам магазина.",
+      "plans": [
+        { "id": "unicorn-new-balance-530-white-silver-navy-base", "label": "1 пара", "price": 10990, "currency": "RUB", "stars": 3232 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "unicorn", "itemPrice": 10990, "deliveryCost": 0, "markup": 0, "finalPrice": 10990, "tag": "Unicorn" }
+      ],
+      "source": "unicorngo",
+      "source_name": "Unicorn",
+      "source_domain": "unicorngo.ru",
+      "source_url": "https://unicorngo.ru/product/new-balance-530-white-silver-navy-1001819?sku=600012663&store=true"
+    },
+    {
+      "id": "unicorn-nike-dunk-low-cacao-wow",
+      "category": "sneakers",
+      "title": "Nike Dunk Low \"Cacao Wow\"",
+      "subtitle": "Unicorn — оригинальные кроссовки",
+      "description": "Заказ и доставка оригинальных кроссовок через сервис Unicorn. Быстрая обработка заявки.",
+      "requirements": "Укажите размер и город для заказа.",
+      "accountPlaceholder": "размер и город",
+      "type": "товар",
+      "seller": "Unicorn",
+      "sellerTag": "unicorngo.ru",
+      "rating": 4.7,
+      "reviews": 0,
+      "official": false,
+      "stock": "В наличии и под заказ",
+      "receiveMethod": "Доставка / выкуп",
+      "deliveryTime": "под уточнение",
+      "sales": 0,
+      "createdAt": "2026-06-18",
+      "visualMode": "photo",
+      "asset": "https://proxy.b2baisolutions.io/v1/image?url=https%3A%2F%2Fcdn.poizon.com%2Fpro-img%2Forigin-img%2F20230920%2F59fad10fe18a4d1ea11c9e7a9da9a630.jpg&w=600&q=75&fit=contain&fmt=auto&trim=0&v=1",
+      "specs": [ "Unicorn", "Заказ и доставка", "Быстрая обработка" ],
+      "warranty": "Гарантия оригинальности товара, возврат и обмен по правилам магазина.",
+      "plans": [
+        { "id": "unicorn-nike-dunk-low-cacao-wow-base", "label": "1 пара", "price": 8990, "currency": "RUB", "stars": 2644 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "unicorn", "itemPrice": 8990, "deliveryCost": 0, "markup": 0, "finalPrice": 8990, "tag": "Unicorn" }
+      ],
+      "source": "unicorngo",
+      "source_name": "Unicorn",
+      "source_domain": "unicorngo.ru",
+      "source_url": "https://unicorngo.ru/product/nike-dunk-low-cacao-wow-3939329?sku=618200687&store=true"
+    },
+    {
+      "id": "unicorn-nike-air-force-1-07-black-samurai",
+      "category": "sneakers",
+      "title": "Nike Air Force 1 '07 Black Samurai",
+      "subtitle": "Unicorn — оригинальные кроссовки",
+      "description": "Заказ и доставка оригинальных кроссовок через сервис Unicorn. Быстрая обработка заявки.",
+      "requirements": "Укажите размер и город для заказа.",
+      "accountPlaceholder": "размер и город",
+      "type": "товар",
+      "seller": "Unicorn",
+      "sellerTag": "unicorngo.ru",
+      "rating": 4.7,
+      "reviews": 0,
+      "official": false,
+      "stock": "В наличии и под заказ",
+      "receiveMethod": "Доставка / выкуп",
+      "deliveryTime": "под уточнение",
+      "sales": 0,
+      "createdAt": "2026-06-18",
+      "visualMode": "photo",
+      "asset": "https://proxy.b2baisolutions.io/v1/image?url=https%3A%2F%2Fcdn.poizon.com%2Fpro-img%2Forigin-img%2F20240726%2Ff5d1e2f2c3b74f0db1e2f2c3b74f0db1.jpg&w=600&q=75&fit=contain&fmt=auto&trim=0&v=1",
+      "specs": [ "Unicorn", "Заказ и доставка", "Быстрая обработка" ],
+      "warranty": "Гарантия оригинальности товара, возврат и обмен по правилам магазина.",
+      "plans": [
+        { "id": "unicorn-nike-air-force-1-07-black-samurai-base", "label": "1 пара", "price": 11990, "currency": "RUB", "stars": 3526 }
+      ],
+      "sourceOffers": [
+        { "sourceId": "unicorn", "itemPrice": 11990, "deliveryCost": 0, "markup": 0, "finalPrice": 11990, "tag": "Unicorn" }
+      ],
+      "source": "unicorngo",
+      "source_name": "Unicorn",
+      "source_domain": "unicorngo.ru",
+      "source_url": "https://unicorngo.ru/product/nike-air-force-1-07-black-samurai-1001819?sku=600012663&store=true"
+    }
+  ]
+}

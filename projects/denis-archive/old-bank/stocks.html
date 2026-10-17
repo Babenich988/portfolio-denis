@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10100e">
+    <meta name="description" content="Учебный каталог вымышленных акций OLD BANK с интерактивным графиком.">
+    <title>Акции — OLD BANK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="markets.js" defer></script>
+  </head>
+  <body class="market-page" data-market="stocks">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="main"><div class="header-shell">
+      <a class="logo" href="index.html" aria-label="OLD BANK — на главную">OLD <span>BANK</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Открыть меню"><span></span><span></span></button>
+      <nav class="navigation" id="primaryNav" aria-label="Основная навигация"><a href="index.html">Главная</a><a href="credit.html">Кредит</a><a href="investments.html">Инвестиции</a><a href="stocks.html" aria-current="page">Акции</a></nav>
+    </div></header>
+    <main id="main">
+      <section class="market-hero market-hero--stocks">
+        <div class="market-hero__copy"><p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> Δ / ГЛАВА III <span>·</span> КАТАЛОГ</p><h1>Акции<br><em>в вымышленном мире.</em></h1><p>Двенадцать придуманных компаний, у каждой своя условная цена, характер движения, сильная сторона и риск.</p><div class="market-hero__actions"><a class="button button--gold" href="#catalog">Смотреть компании <span aria-hidden="true">↓</span></a><a class="market-hero__switch" href="investments.html">К инвестициям <span aria-hidden="true">↗</span></a></div></div>
+        <div class="market-hero__sigil" aria-hidden="true"><span>Δ</span><small>ΤΙΜΗ<br>ΚΑΙΡΟΣ</small><i>✳</i></div>
+      </section>
+      <section class="market-board" aria-labelledby="marketBoardTitle">
+        <div class="market-board__top"><div><span class="live-mark"><i></i> МОДЕЛЬНЫЕ ДАННЫЕ</span><h2 id="marketBoardTitle">Лента условных котировок</h2><p>Симулированный сдвиг числа здесь нужен только для демонстрации поведения интерфейса.</p></div><div class="market-board__quote"><span id="selectedName">Гелиос · условная акция</span><strong id="selectedValue">248,60 ₽</strong><b id="selectedChange">+0,84%</b></div></div>
+        <div class="chart-panel"><div class="chart-panel__meta"><div><span class="eyebrow">ДИНАМИКА / СИМУЛЯЦИЯ</span><strong id="chartCaption">Гелиос · 6 месяцев</strong></div><div class="chart-periods" role="group" aria-label="Период графика"><button type="button" data-period="1m">1М</button><button class="is-active" type="button" data-period="6m">6М</button><button type="button" data-period="1y">1Г</button></div></div><div class="chart-wrap"><svg id="marketChart" viewBox="0 0 760 220" role="img" aria-label="Иллюстративный график условной цены акции"><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#d8b66f" stop-opacity=".24"/><stop offset="1" stop-color="#d8b66f" stop-opacity="0"/></linearGradient></defs><path class="chart-gridline" d="M0 35H760 M0 90H760 M0 145H760 M0 200H760"/><path id="chartArea" class="chart-area" d=""/><path id="chartLine" class="chart-line" d=""/><circle id="chartDot" class="chart-dot" cx="0" cy="0" r="4"/></svg><div class="chart-axis"><span>НАЧАЛО ПЕРИОДА</span><span>СЕЙЧАС / DEMO</span></div></div><p class="chart-note"><span aria-hidden="true">✳</span> Значения меняются в симуляции и не относятся к настоящим компаниям или торгам.</p></div>
+      </section>
+      <section class="catalog-section" id="catalog"><div class="catalog-heading"><div><p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> Β / 12 КОМПАНИЙ</p><h2>Название — не прогноз.<br><em>Смотрите на риски.</em></h2></div><p>Нажмите карточку, чтобы выбрать компанию и перестроить демонстрационный график.</p></div><div class="instrument-grid" id="instrumentGrid"></div><noscript><p class="no-script-note">Для просмотра демонстрационного каталога включите JavaScript.</p></noscript><p class="catalog-disclaimer">Все компании, цены, тикеры, движения и описания вымышлены для учебного макета OLD BANK. Они не являются инвестиционным предложением.</p></section>
+    </main>
+    <footer class="site-footer market-footer"><div class="footer__top"><div class="footer__brand"><a class="logo logo--footer" href="index.html">OLD <span>BANK</span></a><p>Эстетика вне времени.<br>Финансы — без лишнего шума.</p></div><div class="footer__about"><p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> АКЦИИ / III</p><p>Каталог создан для демонстрации возможного интерфейса фондового раздела.</p></div><a class="back-to-top" href="#main">В начало <span aria-hidden="true">↑</span></a></div><div class="footer__bottom"><span>OLD BANK · УЧЕБНЫЙ ПРОЕКТ</span><span>ДАННЫЕ / СИМУЛЯЦИЯ</span></div></footer>
+  </body>
+</html>
