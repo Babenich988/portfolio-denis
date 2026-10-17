@@ -1,0 +1,78 @@
+/* Общие настройки */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Кнопки */
+button,
+a.btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover,
+a.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Форма */
+form {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 200px;
+  margin: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* QR и сканер */
+#qrcode, #reader {
+  margin: 20px auto;
+  width: 300px;
+}
+
+#scanned-data {
+  margin: 20px auto;
+  padding: 10px;
+  color: black;
+  background-color: #e9f7e9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+
+/* Статус */
+#status {
+  font-weight: bold;
+  margin-top: 15px;
+  color: green;
+}
+

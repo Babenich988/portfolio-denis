@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Attendance — Преподаватель</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Подключаем библиотеку для сканирования QR -->
+  <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popins", sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("11.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper{
+  width: 420px;
+  border: 2px solid rgb(255, 255, 255, .2);
+  background: transparent;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  padding: 30px 40px;
+}
+
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+  color: white;
+}
+
+.wrapper button{
+  color: black;
+}
+</style>
+<body>
+  <div class="wrapper">
+    <form action="">
+      <h1>Преподаватель</h1>
+      <div id="reader" style="width: 300px;"></div>
+      <div id="scanned-data">
+        <!-- Здесь отобразятся данные студента -->
+      </div>
+      <button type="submit" style="display:none;">Отметить присутствие</button>
+      <p id="status"></p>
+
+      <script src="js/teacher.js"></script>
+    </form>
+  </div>
+</body>
+</html>
