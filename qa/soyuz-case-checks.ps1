@@ -6,7 +6,7 @@ if (-not (Test-Path -LiteralPath $pagePath)) { throw 'Missing public Soyuz QA ca
 $page = Get-Content -LiteralPath $pagePath -Raw
 $homeContent = Get-Content -LiteralPath $homePath -Raw
 
-foreach ($phrase in @('восемь pytest-тестов', '28 августа 2026', 'Проверяю новые изменения вручную', 'писал другой участник', 'не копировал', 'все 8 прошли')) {
+foreach ($phrase in @('восемь pytest-тестов', '28 августа 2026', 'Проверяю новые изменения вручную', 'только тесты, которые написал сам', 'не указываю как завершённую работу', 'все 8 прошли')) {
   if ($page -notmatch [regex]::Escape($phrase)) { throw "Case page is missing required disclosure/evidence: $phrase" }
 }
 if ($page -match 'Репозиторий с исходным кодом не публичен') {
