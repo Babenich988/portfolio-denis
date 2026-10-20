@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f5f3ee"><meta name="description" content="Портфолио Дениса Бабенко: веб-проекты, цифровые концепты и практика QA.">
-  <title>Портфолио Дениса Бабенко: сайты и QA</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="portfolio-switch.css">
+  <title>Портфолио Дениса Бабенко: сайты и QA</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="qa-inline.css">
 </head>
 <body>
-  <header class="topbar"><a class="wordmark" href="#top" aria-label="Наверх"><span class="mark">D.</span><span>Денис<br><small>избранные проекты</small></span></a><nav aria-label="Основная навигация"><div class="portfolio-switch" aria-label="Раздел портфолио"><a class="is-current" href="#top" aria-current="page">Сайты</a><a href="qa/index.html">QA</a></div><a href="#work">Работы</a><a href="#about">Обо мне</a><a class="contact" href="#work">К проектам <span aria-hidden="true">↗</span></a></nav></header>
+  <header class="topbar"><a class="wordmark" href="#top" aria-label="Наверх"><span class="mark">D.</span><span>Денис<br><small>избранные проекты</small></span></a><nav aria-label="Основная навигация"><a href="#work">Сайты</a><a href="#qa">QA</a><a href="#about">Обо мне</a></nav></header>
   <main id="top">
     <section class="intro"><div class="intro-copy"><p class="eyebrow"><span class="status"></span> ПОРТФОЛИО · WEB & DIGITAL</p><h1>Идеи, которые<br>становятся <em>сайтами.</em></h1><p class="lead">Подборка интерфейсов и цифровых концептов: от учебной платформы до продуктовых сайтов и финансового лендинга.</p><a class="scroll-link" href="#work">Смотреть проекты <span>↓</span></a></div><div class="intro-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb-core">web<br><b>✳</b></div><span class="orbit-label label-a">идея</span><span class="orbit-label label-b">дизайн</span><span class="orbit-label label-c">код</span><span class="art-index">2026<br>VOL. 01</span></div></section>
     <section id="work" class="work"><div class="section-head"><h2>Избранные работы</h2><span>9 проектов <i>·</i> сайты и концепты</span></div>
@@ -23,6 +23,33 @@
 <article class="project" data-type="web"><a class="project-image tile-vintage" href="projects/denis-archive/vintage-food/index.html"><img src="projects/denis-archive/vintage-food/images/header.png" alt="Заглавный экран сайта WHH для помощи животным"><span class="image-tag">WHH</span><span class="open-arrow">↗</span></a><div class="project-meta"><span>08 / ПРОМО-СТРАНИЦА</span></div><div class="project-title"><h3>WHH</h3><a href="projects/denis-archive/vintage-food/index.html" aria-label="Открыть WHH">↗</a></div><p>Сайт проекта помощи животным: программы защиты природы, результаты работы и форма подписки.</p><div class="tags"><span>HTML / CSS</span><span>Иллюстрация</span></div></article>
 <article class="project" data-type="web"><a class="project-image tile-mp" href="projects/denis-archive/mp/index.html"><div class="mp-window"><img src="projects/denis-archive/mp/images/mp.png" alt="Знак MP"><strong>Music<br>for your<br>moment.</strong><span>PLAY YOUR DAY　▶</span></div><span class="image-tag">MUSIC PLAYER</span><span class="open-arrow">↗</span></a><div class="project-meta"><span>09 / МУЗЫКА</span></div><div class="project-title"><h3>MP</h3><a href="projects/denis-archive/mp/index.html" aria-label="Открыть MP">↗</a></div><p>Адаптивный промо-сайт плеера с альбомными страницами, избранным, поиском и демо-контролами.</p><div class="tags"><span>Промо-сайт</span><span>Музыка</span></div></article>
 </div>
+    </section>
+    <section class="qa-section" id="qa" aria-labelledby="qa-title">
+      <div class="qa-heading">
+        <p class="eyebrow">ПРАКТИКА QA</p>
+        <h2 id="qa-title">Проверяю продукт, а не только интерфейс.</h2>
+        <p>Более шести месяцев ручного тестирования в учебных цифровых проектах. Коммерческий опыт не заявляю.</p>
+      </div>
+      <div class="qa-cases">
+        <article class="qa-case">
+          <p class="qa-case-type">КОМАНДНЫЙ УЧЕБНЫЙ ПРОЕКТ · 2026</p>
+          <h3>Мессенджер «Союз» и AI-сервис</h3>
+          <p>В мессенджере вручную проверяю новые изменения, фиксирую дефекты и участвую в их разборе до слияния pull request. Отдельно подготовил прототип AI-сервиса, API-контракты и проверки.</p>
+          <p><a href="qa/soyuz-testing.html">Подробно о проверках в «Союзе» ↗</a></p>
+          <h4>Мой вклад</h4>
+          <ul><li>Описал health-check и контракты пяти AI-операций.</li><li>Подготовил pytest-проверки, Docker-окружение и документацию.</li><li>Настроил GitHub Actions для проверок.</li></ul>
+          <p class="qa-result">Подтверждённый локальный прогон: 8 тестов прошли 28 августа 2026 года. AI-операции работают в mock-режиме, это не production-модель.</p>
+        </article>
+        <article class="qa-case">
+          <p class="qa-case-type">КОМАНДНЫЙ УЧЕБНЫЙ ПРОЕКТ · 2025</p>
+          <h3>KINIS, редактор BPMN-диаграмм</h3>
+          <p>Участвовал в ручном тестировании Windows Forms-приложения для создания и редактирования BPMN-схем.</p>
+          <h4>Что делал</h4>
+          <ul><li>Проверял сценарии работы с BPMN-блоками и текстом.</li><li>Тестировал удаление элементов, рабочие листы и подсказки.</li></ul>
+          <p class="qa-result">Проект был командным. Разработку всего редактора себе не приписываю; сборка и отдельные сценарии сейчас не перепроверялись.</p>
+        </article>
+      </div>
+      <p class="qa-evidence-note">В публичной версии оставлено краткое описание опыта. Исходный код мессенджера и внутренние материалы здесь не размещены.</p>
     </section>
     <section id="about" class="about"><div><p class="eyebrow">ПОДХОД</p><h2>Продумать путь.<br><em>Собрать целое.</em></h2></div><p>В подборке собраны каталоги, бренд-сайты, финансовые концепты, учебные интерфейсы и небольшие веб-приложения из разных папок.</p><a class="about-link" href="#work">Вернуться к работам ↑</a></section>
   </main>

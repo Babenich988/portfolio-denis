@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta name="description" content="Публичное описание QA-практики Дениса в командном учебном проекте «Союз»: ручные проверки и тестирование AI-сервиса.">
+  <title>Тестирование в проекте «Союз» | Денис Бабенко</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .case-page{max-width:1050px;margin:0 auto;padding:74px 44px 100px}
+    .case-intro{max-width:760px;padding-bottom:46px;border-bottom:1px solid var(--line)}
+    .case-intro h1{margin:20px 0 16px;font:600 clamp(40px,6vw,70px)/1.04 var(--display);letter-spacing:-.06em}
+    .case-intro .lead{max-width:680px}
+    .case-block{display:grid;grid-template-columns:220px 1fr;gap:36px;padding:34px 0;border-bottom:1px solid var(--line)}
+    .case-block h2{margin:0;font:600 22px/1.2 var(--display);letter-spacing:-.04em}
+    .case-body{max-width:690px;color:#565851;font-size:14px;line-height:1.8}
+    .case-body p{margin:0 0 14px}.case-body p:last-child{margin-bottom:0}
+    .case-body ul{margin:10px 0 0;padding-left:20px}.case-body li{padding:0 0 8px}
+    .evidence{padding:20px 22px;border-left:2px solid #79905b;background:#eeeee7;color:#41483c}
+    .evidence strong{display:block;margin-bottom:7px;color:var(--ink)}
+    .case-note{margin-top:30px;padding:18px 20px;border:1px solid var(--line);color:#62645d;font-size:12px;line-height:1.7}
+    .case-actions{display:flex;gap:18px;align-items:center;margin-top:29px;font-size:13px;font-weight:600}
+    .case-actions a:first-child{padding:12px 16px;background:var(--ink);color:white;border-radius:4px}
+    .case-actions a:last-child{color:#4f6240}
+    @media(max-width:700px){.topbar,footer{padding:19px 22px}.topbar nav{gap:14px;font-size:11px}.case-page{padding:48px 22px 72px}.case-block{grid-template-columns:1fr;gap:13px;padding:26px 0}.case-intro{padding-bottom:32px}.case-actions{align-items:flex-start;flex-direction:column}}
+    @media print{body{background:#fff}.topbar,footer,.case-actions{display:none}.case-page{max-width:none;padding:0}.case-block,.case-intro{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="../index.html#top" aria-label="Портфолио Дениса, наверх"><span class="mark">D.</span><span>Денис<br><small>QA-кейс</small></span></a>
+    <nav aria-label="Навигация"><a href="../index.html#qa">К портфолио</a></nav>
+  </header>
+  <main class="case-page">
+    <section class="case-intro" aria-labelledby="case-title">
+      <p class="eyebrow">QA · КОМАНДНЫЙ УЧЕБНЫЙ ПРОЕКТ · 2026</p>
+      <h1 id="case-title">Тестирование в проекте «Союз»</h1>
+      <p class="lead">В этом описании собрана только подтверждённая практика проверки изменений мессенджера и автоматизированных проверок отдельного AI-сервиса. Разработка основного приложения здесь не описывается.</p>
+    </section>
+
+    <section class="case-block" aria-labelledby="manual-title">
+      <h2 id="manual-title">Ручная проверка изменений</h2>
+      <div class="case-body">
+        <p><strong>Период:</strong> текущая практика в 2026 году; точные даты отдельных проверок в доступных материалах не зафиксированы.</p>
+        <p>В ходе работы над командным мессенджером Денис вручную проверяет внесённые изменения, ищет ошибки и помогает разобрать найденные проблемы до слияния pull request.</p>
+        <ul>
+          <li>Проверяет поведение продукта после новых изменений.</li>
+          <li>Фиксирует обнаруженные дефекты и участвует в их обсуждении с командой.</li>
+          <li>Повторно проверяет исправления в процессе подготовки pull request к слиянию.</li>
+        </ul>
+        <p class="case-note">Это описание основано на рассказе Дениса о текущей работе. Даты отдельных проверок, список конкретных дефектов и публичные ссылки на задачи не приводятся, поэтому количественные результаты не заявляются.</p>
+      </div>
+    </section>
+
+    <section class="case-block" aria-labelledby="api-title">
+      <h2 id="api-title">Проверки отдельного AI-сервиса</h2>
+      <div class="case-body">
+        <p>Для отдельного FastAPI-прототипа, связанного с проектом, Денис подготовил pytest-проверки health-check и API-эндпоинтов. Проверки использовали тестовый mock-режим, без обращения к production-моделям.</p>
+        <ul>
+          <li>Проверки затрагивали health-check и пять типов AI-операций.</li>
+          <li>GitHub Actions запускал проверки форматирования, lint, тестов и сборки Docker-образа.</li>
+          <li>Конкретные имена тестов и внутренние детали реализации в публичную страницу не включены.</li>
+        </ul>
+        <p>Дата настройки CI и даты отдельных проверок в доступной сводке не указаны.</p>
+        <div class="evidence"><strong>Зафиксированный результат</strong>В контрольном локальном запуске 28 августа 2026 года прошли 8 тестов (`8 passed`). Повторный запуск сейчас не выполнялся.</div>
+      </div>
+    </section>
+
+    <section class="case-block" aria-labelledby="limits-title">
+      <h2 id="limits-title">Границы публикации</h2>
+      <div class="case-body">
+        <p>Проект командный. Исходный код мессенджера и внутренние материалы здесь не размещены. Также не публикуются правила команды, данные пользователей или рабочие доступы.</p>
+        <p>Репозиторий с исходным кодом не публичен и недоступен для публичного просмотра. Публичный кейс описывает только перечисленные QA-активности и проверяемый результат.</p>
+        <p>Модульные тесты и E2E-проверки самого мессенджера ранее обозначались как планы. Они не указаны здесь как завершённые работы.</p>
+        <p>Коммерческий опыт, production-развёртывание AI-модели, число пользователей и бизнес-метрики не заявляются.</p>
+      </div>
+    </section>
+
+    <div class="case-actions">
+      <a href="../index.html#qa">Вернуться к QA-портфолио</a>
+      <a href="soyuz-testing.html" download="denis-soyuz-testing.html">Скачать эту страницу</a>
+      <a href="#" onclick="window.print();return false">Сохранить или распечатать в PDF</a>
+    </div>
+  </main>
+  <footer><a class="wordmark" href="../index.html#top"><span class="mark">D.</span><span>Денис<br><small>избранные проекты</small></span></a><span>Портфолио · 2026</span><a href="#case-title">Наверх ↑</a></footer>
+</body>
+</html>
