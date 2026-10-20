@@ -6,8 +6,11 @@ if (-not (Test-Path -LiteralPath $pagePath)) { throw 'Missing public Soyuz QA ca
 $page = Get-Content -LiteralPath $pagePath -Raw
 $homeContent = Get-Content -LiteralPath $homePath -Raw
 
-foreach ($phrase in @('8 тестов', '28 августа 2026', 'не размещены', 'не публич')) {
+foreach ($phrase in @('восемь pytest-тестов', '28 августа 2026', 'Проверяю новые изменения вручную', 'писал другой участник', 'не копировал', 'все 8 прошли')) {
   if ($page -notmatch [regex]::Escape($phrase)) { throw "Case page is missing required disclosure/evidence: $phrase" }
+}
+if ($page -match 'Репозиторий с исходным кодом не публичен') {
+  throw 'Do not claim that the source repository is private; describe only what is or is not included on this case page.'
 }
 if ($page -match '(?i)unit tests completed|юнит-тесты выполнены|e2e tests completed|e2e-тесты выполнены') {
   throw 'Planned unit/E2E work must not be presented as completed.'
