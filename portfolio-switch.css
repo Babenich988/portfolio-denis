@@ -1,0 +1,15 @@
+@view-transition{navigation:auto}
+
+.portfolio-switch{display:inline-flex;align-items:center;gap:2px;padding:3px;border:1px solid var(--line,#d9d8d1);border-radius:999px;background:color-mix(in srgb,var(--surface,#fbfaf6) 82%,transparent);white-space:nowrap}
+.portfolio-switch a{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:0 12px;border-radius:999px;color:var(--muted,#6f716b);font-size:11px;font-weight:700;transition:background-color .2s ease,color .2s ease,transform .2s ease}
+.portfolio-switch a:hover{transform:translateY(-1px)}
+.portfolio-switch a.is-current{background:var(--ink,#20221f);color:var(--paper,#f5f3ee)}
+.portfolio-switch a:focus-visible{outline:3px solid var(--accent,#31583f);outline-offset:3px}
+
+::view-transition-old(root){animation:portfolio-leave .2s ease both}
+::view-transition-new(root){animation:portfolio-enter .34s cubic-bezier(.2,.75,.25,1) both}
+@keyframes portfolio-leave{to{opacity:0;transform:translateY(-6px) scale(.994)}}
+@keyframes portfolio-enter{from{opacity:0;transform:translateY(9px) scale(.994)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+@media(max-width:760px){.topbar{flex-wrap:wrap}.topbar nav{width:100%;justify-content:space-between;gap:10px}.portfolio-switch a{min-height:29px;padding:0 10px}.topbar nav>a[href="#about"]{display:none}}
+@media(prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}.portfolio-switch a{transition:none}.portfolio-switch a:hover{transform:none}}
